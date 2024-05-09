@@ -1,0 +1,103 @@
+/* Set background image for the header */
+body {
+    margin: 0;
+    width: 100%;
+    padding-top: 20px;
+    font-family: 'Avenir';
+    font-weight: bolder;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed; /* Add position relative to establish stacking context */
+    width: 100%; /* Full width */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    text-align: center; /* Center align text */
+    padding: 10px 0; /* Add padding for spacing */
+    font-size: 20px;
+}
+
+.minimized {
+    padding: 3px 0; /* Adjust padding to make header smaller */
+    font-size: 10px !important;
+}
+
+.custom-p1 {
+    margin: 0;
+    font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* Style the main content section */
+.main-content {
+    position: relative; /* Position relative for positioning background image */
+    min-height: 100vh /* Set minimum height */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/background.jpg'); /* Same background image as header */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Set opacity to create a semi-transparent overlay */
+}
+
+.content {
+    padding: 50px;
+    text-align: center; /* Center align content */
+}
+
+/* Style the button */
+button {
+    display: block; /* Make the button a block-level element */
+    margin: 20px auto; /* Center the button horizontally with auto margins */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    position: relative; /* Ensure button is positioned relative */
+    z-index: 1; /* Set a higher z-index to ensure the button is clickable */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue background color on hover */
+}
+
+.image-container {
+    position: relative; /* Ensure button is positioned relative */
+    z-index: 1; /* Set a higher z-index to ensure the button is clickable */
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+}
+
+/* Style the paragraph */
+p {
+    /*margin-bottom: 20px; /* Add bottom margin for spacing */
+    font-size: 18px; /* Set font size */
+    line-height: 1.5; /* Set line height for readability */
+    color:black;
+}
+
+footer {
+    text-align: center;
+    background-color: bisque;
+}
+
