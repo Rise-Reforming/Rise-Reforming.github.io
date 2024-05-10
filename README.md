@@ -1,3 +1,3 @@
 # Website Layout Planning
 
-# $\frac[2][1]$
+# $\frac{2}{1}$
