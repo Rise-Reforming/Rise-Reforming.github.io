@@ -4,11 +4,20 @@
 - Home
 - Technology
 - Team
+- Impact
 
 ### Team Page
 * cofounders, gr lz jo, as in slide deck
 * link each linkedin
 * same for advisors
+
+### Impact Page
+* our future impact slide
+
+### Technology Page
+* a revolutionary path to carbon negative chemicals
+* tbd (special information)
+* why modular, from slide
 
 ### Buttons
 - Contact Us (goes to form that sends to georgerose@uchicago.edu)
