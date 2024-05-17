@@ -34,10 +34,18 @@ function myFunction() {
 window.addEventListener('scroll', function() {
     console.log("scrolled");
     var header = document.querySelector('header');
+    var logos = document.querySelectorAll('.logo img'); // Select the logo image
+
     if (window.scrollY > 25) { // Change 25 to adjust when the header starts shrinking
         header.classList.add('minimized');
+        logos.forEach(function(logo) {
+            logo.style.height = '40px'; // Adjust the height of each logo image
+        });
     } else {
         header.classList.remove('minimized');
+        logos.forEach(function(logo) {
+            logo.style.height = '100px'; // Adjust the height of each logo image
+        });
     }
 });
 

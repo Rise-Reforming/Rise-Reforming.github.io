@@ -36,7 +36,7 @@ header {
     /*padding: 10px 0;  Add padding for spacing */
     font-size: 20px;
 
-    padding: 30px 20px; /* Add padding for spacing */
+    padding: 40px 20px; /* Add padding for spacing */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,13 +48,14 @@ header {
 }
 
 .logo img {
-    height: 80px; /* Adjust as needed */
-    margin-right: 10px; /* Space between logo and company name */
-    margin-left: 50px;
+    height: 100px; /* Adjust as needed */
+    margin-right: 1px; /* Space between logo and company name */
+    margin-left: 100px;
+    transition: all 0.5s ease;
 }
 
 nav {
-    padding-right: 75px; /* Adjust padding to create space from the right edge */
+    padding-right: 100px; /* Adjust padding to create space from the right edge */
 }
 
 nav a {
@@ -70,7 +71,7 @@ nav a:hover {
 }
 
 .minimized {
-    padding: 3px 0; /* Adjust padding to make header smaller */
+    padding: 5px 0; /* Adjust padding to make header smaller */
     font-size: 10px !important;
 }
 
