@@ -70,6 +70,20 @@ nav a:hover {
     text-decoration: underline; /* Add hover effect if desired */
 }
 
+.slogan {
+    font-family: 'Lato', sans-serif; /* Use Lato font */
+    font-size: 10px; /* Set font size to 10px */
+    font-style: italic; /* Italicize the text */
+    color: #ffffff; /* Text color */
+    z-index: -5000;
+    transition: all 0.5s ease;
+    opacity:0;
+}
+
+.min-slogan {
+    opacity: 0;
+}
+
 .minimized {
     padding: 5px 0; /* Adjust padding to make header smaller */
     font-size: 10px !important;
@@ -81,12 +95,14 @@ nav a:hover {
     /*font-family: Arial, Helvetica, sans-serif;*/
     color: black;
     z-index: 2000;
+    overflow:visible;
 }
 
 /* Style the main content section */
 .main-content {
     position: relative; /* Position relative for positioning background image */
-    min-height: 100vh /* Set minimum height */
+    min-height: 100vh; /* Set minimum height */
+    margin: 0 auto; 
 }
 
 .background-image {
