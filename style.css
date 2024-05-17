@@ -6,7 +6,19 @@ body {
     font-family: 'Avenir';
     font-weight: bolder;
     overflow-x: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-color: #6885da;
 }
+
+body.fade-out {
+    opacity: 0;
+}
+
+body.fade-in {
+    opacity: 1;
+}
+
 
 header {
     position: fixed; /* Add position relative to establish stacking context */
@@ -34,6 +46,7 @@ header {
     font-size: 75px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    z-index: 2000;
 }
 
 /* Style the main content section */
@@ -51,12 +64,14 @@ header {
     background-image: url('images/background.jpg'); /* Same background image as header */
     background-size: cover;
     background-position: center;
-    opacity: 0.3; /* Set opacity to create a semi-transparent overlay */
+    opacity: 1; /* Set opacity to create a semi-transparent overlay */
+    z-index: -2000;
 }
 
 .content {
-    padding: 50px;
+    padding: 100px;
     text-align: center; /* Center align content */
+    z-index: 1000;
 }
 
 /* Style the button */
