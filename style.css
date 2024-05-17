@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    background-color: #6885da;
+    background-color: #12452d;
 }
 
 body.fade-out {
@@ -27,7 +27,8 @@ header {
     left: 0;
     z-index: 1000;
     transition: all 0.5s ease; /* Add transition for smooth animation */
-    background-image: url('images/background.jpg');
+    /*background-image: url('images/background.jpg');*/
+    background-color: #063623;
     background-size: cover;
     background-position: center;
     color: white; 
@@ -35,7 +36,7 @@ header {
     /*padding: 10px 0;  Add padding for spacing */
     font-size: 20px;
 
-    padding: 10px 20px; /* Add padding for spacing */
+    padding: 30px 20px; /* Add padding for spacing */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,8 +48,9 @@ header {
 }
 
 .logo img {
-    height: 60px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
     margin-right: 10px; /* Space between logo and company name */
+    margin-left: 50px;
 }
 
 nav {
@@ -100,7 +102,7 @@ nav a:hover {
 }
 
 .content {
-    padding: 125px;
+    padding: 200px;
     text-align: center; /* Center align content */
     z-index: 1000;
 }
