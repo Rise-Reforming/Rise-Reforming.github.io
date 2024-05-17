@@ -56,6 +56,7 @@ header {
 
 nav {
     padding-right: 100px; /* Adjust padding to create space from the right edge */
+    display: flex;
 }
 
 nav a {
@@ -110,7 +111,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/background.jpg'); /* Same background image as header */
+    background-image: url('images/background.jpg'); 
     background-size: cover;
     background-position: center;
     opacity: 1; /* Set opacity to create a semi-transparent overlay */
@@ -145,6 +146,8 @@ button:hover {
 .image-container {
     position: relative; /* Ensure button is positioned relative */
     z-index: 1; /* Set a higher z-index to ensure the button is clickable */
+    display: flex;
+    justify-content: center;
 }
 
 .image-container img {

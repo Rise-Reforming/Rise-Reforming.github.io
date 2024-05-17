@@ -35,7 +35,6 @@ window.addEventListener('scroll', function() {
     console.log("scrolled");
     var header = document.querySelector('header');
     var logos = document.querySelectorAll('.logo img'); // Select the logo image
-    var slogan = document.querySelector('slogan');
 
     if (window.scrollY > 25) { // Change 25 to adjust when the header starts shrinking
         header.classList.add('minimized');
