@@ -18,7 +18,6 @@ document.querySelectorAll('nav a').forEach(link => {
 window.addEventListener('load', function() {
     // Remove fade-out class to reset opacity to 1
     document.body.classList.remove('fade-out');
-    
     // Add fade-in class after a short delay to trigger the transition effect
     setTimeout(() => {
         document.body.classList.add('fade-in');
