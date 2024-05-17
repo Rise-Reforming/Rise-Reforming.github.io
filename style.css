@@ -163,6 +163,12 @@ p {
     color:black;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
 footer {
     text-align: center;
     background-color: bisque;
