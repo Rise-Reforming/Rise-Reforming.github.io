@@ -103,8 +103,10 @@ window.addEventListener('scroll', function() {
 
     if (window.scrollY > 25) { // Change 25 to adjust when the header starts shrinking
         header2.classList.add('minimized');
+        document.getElementById('head2').style.marginLeft = '65px';
     } else {
         header2.classList.remove('minimized');
+        document.getElementById('head2').style.marginLeft = '45px';
     }
 });
 

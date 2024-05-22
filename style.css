@@ -70,7 +70,7 @@ header2 {
 
 #head2 {
     /*background-color: red;*/
-    margin-left: 58px; /*manually centering...*/
+    margin-left: 57px; /*manually centering...*/
 }
 
 .invis {
@@ -98,7 +98,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 20px; /* Space between links */
+    margin-left: 25px; /* Space between links */
     font-size: 18px; /* Adjust font size as needed */
     /*margin-right: 20px;*/
 }
