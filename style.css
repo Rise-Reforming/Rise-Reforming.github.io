@@ -171,6 +171,7 @@ nav a:hover {
     padding: 40px;
     text-align: center; /* Center align content */
     z-index: 1000;
+    min-height: 100vh;
 }
 
 /* Style the button */
