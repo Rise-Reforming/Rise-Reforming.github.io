@@ -38,11 +38,13 @@ window.addEventListener('scroll', function() {
 
     if (window.scrollY > 25) { // Change 25 to adjust when the header starts shrinking
         header.classList.add('minimized');
+        header.style.opacity = '1';
         logos.forEach(function(logo) {
             logo.style.height = '40px'; // Adjust the height of each logo image
         });
     } else {
         header.classList.remove('minimized');
+        header.style.opacity = '.8';
         logos.forEach(function(logo) {
             logo.style.height = '100px'; // Adjust the height of each logo image
         });
@@ -106,9 +108,11 @@ window.addEventListener('scroll', function() {
     if (window.scrollY > 25) { // Change 25 to adjust when the header starts shrinking
         header2.classList.add('minimized');
         document.getElementById('head2').style.marginLeft = '65px';
+        header2.style.opacity = '1';
     } else {
         header2.classList.remove('minimized');
         document.getElementById('head2').style.marginLeft = '45px';
+        header2.style.opacity = '.8';
     }
 });
 
