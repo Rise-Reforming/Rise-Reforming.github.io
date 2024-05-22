@@ -2,7 +2,6 @@
 body {
     margin: 0;
     width: 100%;
-    padding-top: 20px;
     font-family: 'Lato';
     font-weight: bolder;
     overflow-x: hidden;
@@ -21,7 +20,6 @@ body.fade-in {
 
 
 header {
-    overflow-x: hidden;
     position: fixed; /* Add position relative to establish stacking context */
     width: 100%; /* Full width */
     top: 0;
@@ -42,11 +40,11 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    opacity: .8;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow effect */
 }
 
 header2 {
-    overflow-x: hidden;
     position: fixed; /* Add position relative to establish stacking context */
     width: 100%; /* Full width */
     top: 0;
@@ -68,6 +66,7 @@ header2 {
     justify-content: center; /* Center horizontally */
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    opacity: .8;
 }
 
 #head2 {
@@ -162,6 +161,10 @@ nav a:hover {
     padding: 200px;
     text-align: center; /* Center align content */
     z-index: 1000;
+}
+
+#main1 {
+    padding: 200px;
 }
 
 .content {

@@ -83,9 +83,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.innerWidth < 800) { 
             header.classList.add('invis');
             header2.classList.remove('invis');
+            document.getElementById('main1').style.padding = '120px';
         } else {
             header.classList.remove('invis');
             header2.classList.add('invis');
+            document.getElementById('main1').style.padding = '200px';
         }
     }
 
