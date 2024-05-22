@@ -126,7 +126,6 @@ nav a:hover {
     padding: 200px;
     text-align: center; /* Center align content */
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .content {
