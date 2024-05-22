@@ -56,6 +56,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // Stop observing once the element is in view
+            }
+        });
+    }, {
+        threshold: 0.1 // Adjust this threshold to control when the animations trigger
+    });
+
+    const elements = document.querySelectorAll('.hidden');
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});
 
 
 

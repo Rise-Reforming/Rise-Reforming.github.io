@@ -184,3 +184,15 @@ footer {
     background-color: bisque;
 }
 
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* State for when the elements are in view */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
