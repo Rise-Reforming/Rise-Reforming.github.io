@@ -73,20 +73,6 @@ nav a:hover {
     text-decoration: underline; /* Add hover effect if desired */
 }
 
-.slogan {
-    font-family: 'Lato', sans-serif; /* Use Lato font */
-    font-size: 10px; /* Set font size to 10px */
-    font-style: italic; /* Italicize the text */
-    color: #ffffff; /* Text color */
-    z-index: -5000;
-    transition: all 0.5s ease;
-    opacity:0;
-}
-
-.min-slogan {
-    opacity: 0;
-}
-
 .minimized {
     padding: 5px 0; /* Adjust padding to make header smaller */
     font-size: 10px !important;
@@ -94,10 +80,13 @@ nav a:hover {
 
 .custom-p1 {
     margin: 0;
-    font-size: 75px;
+    font-size: 50px;
     color: black;
-    z-index: 2000;
+    /*z-index: 2000;*/
     overflow:visible;
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 /* Style the main content section */
@@ -129,7 +118,7 @@ nav a:hover {
     background-image: url('images/PLASTIC\ LANDFILL.jpg'); 
     background-size: cover;
     background-position: center;
-    opacity: .9; /* Set opacity to create a semi-transparent overlay */
+    opacity: .8; /* Set opacity to create a semi-transparent overlay */
     z-index: -2000;
 }
 
@@ -138,7 +127,6 @@ nav a:hover {
     text-align: center; /* Center align content */
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-
 }
 
 .content {
