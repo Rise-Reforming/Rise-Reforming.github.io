@@ -44,6 +44,40 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow effect */
 }
 
+header2 {
+    position: fixed; /* Add position relative to establish stacking context */
+    width: 100%; /* Full width */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.5s ease; /* Add transition for smooth animation */
+    /*background-image: url('images/background.jpg');*/
+    background-color: #063623;
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    text-align: center; /* Center align text */
+    /*padding: 10px 0;  Add padding for spacing */
+    font-size: 20px;
+
+    padding: 40px 20px; /* Add padding for spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow effect */
+}
+
+#head2 {
+    /*background-color: red;*/
+    margin-left: 40px; /*manually centering...*/
+}
+
+.invis {
+    display: none;
+}
+
+
 .logo {
     display: flex;
     align-items: center;
@@ -52,7 +86,7 @@ header {
 .logo img {
     height: 100px; /* Adjust as needed */
     margin-right: 1px; /* Space between logo and company name */
-    margin-left: 100px;
+    margin-left: 50px;
     transition: all 0.5s ease;
 }
 

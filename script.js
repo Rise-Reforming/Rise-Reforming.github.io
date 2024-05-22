@@ -75,4 +75,36 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('header');
+    const header2 = document.querySelector('header2');
+
+    function checkWidth() {
+        if (window.innerWidth < 800) { 
+            header.classList.add('invis');
+            header2.classList.remove('invis');
+        } else {
+            header.classList.remove('invis');
+            header2.classList.add('invis');
+        }
+    }
+
+    // Check width on page load
+    checkWidth();
+
+    // Add event listener to monitor resize
+    window.addEventListener('resize', checkWidth);
+});
+
+window.addEventListener('scroll', function() {
+    console.log("scrolled");
+    var header2 = document.querySelector('header2');
+    //var logos = document.querySelectorAll('.logo img'); // Select the logo image
+
+    if (window.scrollY > 25) { // Change 25 to adjust when the header starts shrinking
+        header2.classList.add('minimized');
+    } else {
+        header2.classList.remove('minimized');
+    }
+});
 
