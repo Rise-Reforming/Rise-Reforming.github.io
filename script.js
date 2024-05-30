@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.1 // Adjust this threshold to control when the animations trigger
+        threshold: 0.05 // Adjust this threshold to control when the animations trigger
     });
 
     const elements = document.querySelectorAll('.hidden');
@@ -115,4 +115,28 @@ window.addEventListener('scroll', function() {
         header2.style.opacity = '.8';
     }
 });
+
+
+
+let texts = ["Tomorrow's Value", "Today's Waste"]; // Array of texts to cycle through
+let currentIndex = 0; // Index of the current text
+const pElement = document.querySelector('.custom-p1');
+
+// Function to switch text
+function switchText() {
+    pElement.classList.add('hidden');
+    setTimeout(() => {
+        pElement.textContent = texts[currentIndex];
+        currentIndex = (currentIndex + 1) % texts.length; // Move to the next text
+        setTimeout(() => {
+            pElement.classList.remove('hidden');
+        }, 100); // Wait 0.2 seconds before fading in
+    }, 800); // Match this value with the transition duration
+}
+
+// Start timer for auto-switching text
+setInterval(switchText, 4000); // Change text every 3 seconds
+
+
+
 

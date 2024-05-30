@@ -115,13 +115,21 @@ nav a:hover {
 
 .custom-p1 {
     margin: 0;
-    font-size: 50px;
-    color: black;
+    font-size: 100px;
+    color: rgb(0, 0, 0); /* Very thick letters */
+    /*font-family: 'Poppins', sans-serif; /* Use the Poppins font */
+    /*font-family: 'Arial Black', Gadget, sans-serif;*/
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500; /* S
     /*z-index: 2000;*/
     overflow:visible;
     display: flex; 
     justify-content: center;
+    margin-top:0px;
     margin-bottom: 50px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
 }
 
 /* Style the main content section */
@@ -153,7 +161,7 @@ nav a:hover {
     background-image: url('images/PLASTIC\ LANDFILL.jpg'); 
     background-size: cover;
     background-position: center;
-    opacity: .8; /* Set opacity to create a semi-transparent overlay */
+    opacity: .7; /* Set opacity to create a semi-transparent overlay */
     z-index: -2000;
 }
 
@@ -228,6 +236,10 @@ footer {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.hidden2 {
+    opacity: 0;
 }
 
 /* State for when the elements are in view */
