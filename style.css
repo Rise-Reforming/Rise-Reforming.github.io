@@ -132,6 +132,19 @@ nav a:hover {
     transition: opacity .5s ease-in-out;
 }
 
+#main1 {
+    padding: 200px;
+}
+
+#caption1 {
+    font-family: 'Lucida Sans';
+    font-size: 20px;
+    color: white;
+    transition: opacity .5s ease-in-out;
+    font-weight: 5000;
+}
+
+
 /* Style the main content section */
 .main-content {
     position: relative; /* Position relative for positioning background image */
@@ -145,7 +158,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/background.jpg'); 
+    background-image: url('images/background5.png'); 
     background-size: cover;
     background-position: center;
     opacity: 1; /* Set opacity to create a semi-transparent overlay */
@@ -169,10 +182,6 @@ nav a:hover {
     padding: 200px;
     text-align: center; /* Center align content */
     z-index: 1000;
-}
-
-#main1 {
-    padding: 200px;
 }
 
 .content {
