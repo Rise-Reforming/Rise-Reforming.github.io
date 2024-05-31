@@ -139,7 +139,7 @@ nav a:hover {
 #caption1 {
     font-family: 'Lucida Sans';
     font-size: 20px;
-    color: white;
+    color: black;
     transition: opacity .5s ease-in-out;
     font-weight: 5000;
 }
