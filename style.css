@@ -281,12 +281,11 @@ footer {
     transform: translateY(0);
 }
 
-
 :root {
     --viewport-gap: calc(10vw); /* Adjust the value as needed */
 }
 
-#team1 {
-    margin-top:200px;
+#bios {
+    margin-top: 50px;
     gap: var(--viewport-gap);
 }
