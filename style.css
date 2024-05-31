@@ -218,9 +218,18 @@ button:hover {
 }
 
 .image-container img {
-    width: 300px;
+    width: 200px;
     height: auto;
 }
+
+.image-container a img {
+    transition: transform 0.3s ease;
+}
+
+.image-container a:hover img {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
 
 /* Style the paragraph */
 p {
