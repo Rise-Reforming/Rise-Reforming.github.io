@@ -282,10 +282,26 @@ footer {
 }
 
 :root {
-    --viewport-gap: calc(10vw); /* Adjust the value as needed */
+    --viewport-gap: calc(8vw); /* Adjust the value as needed */
 }
 
 #bios {
     margin-top: 50px;
     gap: var(--viewport-gap);
+}
+
+.image-caption {
+    text-align: center; /* Center the image and caption */
+    margin-bottom: 20px; /* Add space between each image-caption */
+}
+
+.image-caption img {
+    width: 200px; /* Adjust image width as needed */
+    height: auto; /* Adjust image height as needed */
+}
+
+.image-caption p {
+    margin-top: 5px; /* Add space between image and caption */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #d7c8c8; /* Adjust text color as needed */
 }
