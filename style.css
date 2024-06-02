@@ -139,7 +139,7 @@ nav a:hover {
 .custom-p2 {
     margin: 0;
     font-size: 100px;
-    color: rgb(0, 0, 0); /* Very thick letters */
+    color: white; /* Very thick letters */
     /*font-family: 'Poppins', sans-serif; /* Use the Poppins font */
     /*font-family: 'Arial Black', Gadget, sans-serif;*/
     font-family: 'Oswald', sans-serif;
@@ -258,6 +258,8 @@ button:hover {
     width: 200px;
     height: auto;
     margin: 10 px;
+    border: 5px solid #ff6347; /* Add a colored border (e.g., tomato color) */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /*
 }
 
 .image-container a img {
