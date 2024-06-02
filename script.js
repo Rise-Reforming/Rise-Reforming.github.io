@@ -138,5 +138,20 @@ function switchText() {
 setInterval(switchText, 4000); // Change text every 3 seconds
 
 
+document.addEventListener('DOMContentLoaded', () => {
 
+    function checkWidth() {
+        if (window.innerWidth < 800) { 
+            document.getElementById('titletext').style.fontSize = '80px';
+        } else {
+            document.getElementById('titletext').style.fontSize = '100px';
+        }
+    }
+
+    // Check width on page load
+    checkWidth();
+
+    // Add event listener to monitor resize
+    window.addEventListener('resize', checkWidth);
+});
 
