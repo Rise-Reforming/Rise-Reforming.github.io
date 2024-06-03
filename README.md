@@ -5,9 +5,11 @@
 - Technology
 - Team
 - Impact
+- News
 
 ### Team Page
 * cofounders, gr lz jo, as in slide deck
+    - Make name bold, title less bold and play around with shape of team
 * link each linkedin
 * same for advisors
 
