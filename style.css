@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    background-color: #12452d;
+    background-color: #ffffff;
 }
 
 body.fade-out {
@@ -138,8 +138,8 @@ nav a:hover {
 
 .custom-p2 {
     margin: 0;
-    font-size: 100px;
-    color: white; /* Very thick letters */
+    font-size: 60px;
+    color: rgb(0, 0, 0); /* Very thick letters */
     /*font-family: 'Poppins', sans-serif; /* Use the Poppins font */
     /*font-family: 'Arial Black', Gadget, sans-serif;*/
     font-family: 'Oswald', sans-serif;
@@ -197,7 +197,7 @@ nav a:hover {
     background-image: url('images/PLASTIC\ LANDFILL.jpg'); 
     background-size: cover;
     background-position: center;
-    opacity: .7; /* Set opacity to create a semi-transparent overlay */
+    opacity: .9; /* Set opacity to create a semi-transparent overlay */
     z-index: -2000;
 }
 
@@ -288,7 +288,7 @@ footer {
     align-items: center; /* Vertical centering */
     justify-content: center; /* Horizontal centering */
     text-align: center;
-    background-color: bisque;
+    background-color: #063623;
     height: 50px;
 }
 
@@ -330,5 +330,5 @@ footer {
 .image-caption p {
     margin-top: 5px; /* Add space between image and caption */
     font-size: 16px; /* Adjust font size as needed */
-    color: #d7c8c8; /* Adjust text color as needed */
+    color: #000000; /* Adjust text color as needed */
 }
