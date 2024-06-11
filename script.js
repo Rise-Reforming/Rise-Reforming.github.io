@@ -142,9 +142,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkWidth() {
         if (window.innerWidth < 800) { 
-            document.getElementById('titletext').style.fontSize = '80px';
+            document.getElementById('titletext').style.fontSize = '60px';
         } else {
-            document.getElementById('titletext').style.fontSize = '100px';
+            document.getElementById('titletext').style.fontSize = '90px';
         }
     }
 

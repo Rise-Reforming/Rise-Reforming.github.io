@@ -133,7 +133,7 @@ nav a:hover {
 }
 
 #titletext {
-    font-size: 100px;
+    font-size: 90px;
 }
 
 .custom-p2 {
@@ -158,8 +158,6 @@ nav a:hover {
 #main1 {
     padding: 0px;
 }
-
-
 
 #caption1 {
     font-family: 'Lucida Sans';
@@ -328,7 +326,7 @@ footer {
 }
 
 .image-caption img {
-    width: 250px; /* Adjust image width as needed */
+    width: 350px; /* Adjust image width as needed */
     height: auto; /* Adjust image height as needed */
 }
 
@@ -355,6 +353,7 @@ footer {
 
 .width-txt-s {
     width:50vh;
+    justify-content: center;
 }
 
 #prob2 {
