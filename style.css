@@ -344,7 +344,7 @@ footer p {
 }
 
 #sec2 {
-    min-height: 80vh;
+    min-height: 70vh;
     background-color: rgb(255, 255, 255);
     padding-bottom: 50px;
 }
@@ -359,34 +359,23 @@ footer p {
 .width-txt-s {
     width:50vh;
     justify-content: center;
+    margin-bottom:-40px;
 }
 
 #prob2 {
+    padding-top:50px;
     gap: var(--viewport-gap2);
 }
 
-#sec2h1 {
+.headbar p {
     padding-top: 50px;
     font-size: 50px;
 }
 
-#sec2h2 {
-    padding-top: 50px;
-    font-size: 50px;
-}
-
-#sec20 {
+.headbar {
     background-color: rgb(118, 145, 118);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-#sec21 {
-    background-color: rgb(118, 145, 118);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -411,4 +400,24 @@ footer p {
     padding-right: var(--viewport-gap2);
     padding-left: var(--viewport-gap2);
     max-width:50vh;
+}
+
+#sec4 {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sec4im {
+    width:90vw;
+}
+
+#sec4txt {
+    text-align: center;
+    flex: 1; 
+    min-width: 160px;
+    padding-right: var(--viewport-gap2);
+    padding-left: var(--viewport-gap2);
+    max-width:80vh;
 }
