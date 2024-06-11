@@ -292,6 +292,10 @@ footer {
     height: 50px;
 }
 
+footer p {
+    color:white;
+}
+
 .hidden {
     opacity: 0;
     transform: translateY(50px);
