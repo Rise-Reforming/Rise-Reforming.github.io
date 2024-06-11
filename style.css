@@ -338,7 +338,7 @@ footer {
 
 #sec2 {
     min-height: 80vh;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding-bottom: 50px;
 }
 
@@ -357,3 +357,12 @@ footer {
     padding-top: 50px;
     font-size: 50px;
 }
+
+#sec21 {
+    background-color: rgb(118, 145, 118);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
