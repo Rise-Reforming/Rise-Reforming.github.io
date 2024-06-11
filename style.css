@@ -161,10 +161,11 @@ nav a:hover {
 
 #caption1 {
     font-family: 'Lucida Sans';
-    font-size: 20px;
-    color: white;
+    font-size: 25px;
+    color: black;
     transition: opacity .5s ease-in-out;
     font-weight: 5000;
+    padding-top:70px;
 }
 
 
@@ -197,7 +198,7 @@ nav a:hover {
     background-image: url('images/PLASTIC\ LANDFILL.jpg'); 
     background-size: cover;
     background-position: center;
-    opacity: .9; /* Set opacity to create a semi-transparent overlay */
+    opacity: .30; /* Set opacity to create a semi-transparent overlay */
     z-index: -2000;
 }
 
@@ -364,9 +365,22 @@ footer p {
     gap: var(--viewport-gap2);
 }
 
-#sec2h {
+#sec2h1 {
     padding-top: 50px;
     font-size: 50px;
+}
+
+#sec2h2 {
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+#sec20 {
+    background-color: rgb(118, 145, 118);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 #sec21 {
