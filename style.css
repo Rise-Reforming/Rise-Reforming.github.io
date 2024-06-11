@@ -349,6 +349,10 @@ footer {
     border: 5px solid #000;
 }
 
+.width-txt-s {
+    width:50vh;
+}
+
 #prob2 {
     gap: var(--viewport-gap2);
 }
@@ -366,3 +370,24 @@ footer {
     padding-right: 50px;
 }
 
+#sec3 {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sec3im {
+    padding-left: var(--viewport-gap2);
+    height: 500px;
+    width: auto;
+}
+
+#sec3txt {
+    text-align: center;
+    flex: 1; 
+    min-width: 160px;
+    padding-right: var(--viewport-gap2);
+    padding-left: var(--viewport-gap2);
+    max-width:50vh;
+}
