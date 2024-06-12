@@ -8,6 +8,7 @@ body {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 
 body.fade-out {
@@ -350,11 +351,11 @@ footer p {
 }
 
 .sec2c img {
+    max-width:80vw;
     margin-top: 20px;
     height: 400px;
     width: auto;
-    border: 5px solid #000;
-    max-width:80vw;
+    /*border: 5px solid #000;*/
 }
 
 .width-txt-s {
