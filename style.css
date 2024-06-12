@@ -453,8 +453,8 @@ footer p {
 #tech1p {
     font-size: 60px;
     color: rgba(0, 0, 0, 1); 
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500; 
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700; 
     opacity: 1;
 }
 
@@ -466,7 +466,8 @@ footer p {
 #tech2txt1 {
     font-size: 50px;
     color: rgba(0, 0, 0, 1); 
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Archivo', sans-serif;
     font-weight: 500; 
     opacity: 1;
 }
