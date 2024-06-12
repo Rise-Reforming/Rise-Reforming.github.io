@@ -155,3 +155,22 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', checkWidth);
 });
 
+function adjustTextSize() {
+    const element0 = document.getElementById('tech1p');
+    const element1 = document.getElementById('tech-bg');
+    if (window.matchMedia('(max-width: 1100px)').matches) {
+        element0.style.fontSize = '45px'; // Change to the desired smaller font size
+        element1.style.height = '45px'; // Change to the desired smaller font size
+    } else {
+        element0.style.fontSize = '60px'; // Change to the original font size
+    }
+
+    if (window.matchMedia('(max-width: 600px)').matches) {
+        element1.style.height = '600px'; // Change to the desired smaller font size
+    } else {
+        element1.style.height = '500px'; // Change to the original font size
+    }
+}
+
+adjustTextSize();
+window.addEventListener('resize', adjustTextSize);
