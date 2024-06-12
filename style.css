@@ -357,9 +357,11 @@ footer p {
 }
 
 .width-txt-s {
-    width:50vw;
+    /*width:50vw;*/
     justify-content: center;
     margin-bottom:-40px;
+    margin-left:30px;
+    margin-right:30px;
 }
 
 #prob2 {
