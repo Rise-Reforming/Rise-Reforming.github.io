@@ -484,3 +484,14 @@ footer p {
     font-weight: 100; 
     opacity: 1;
 }
+
+#tech3 {
+    text-align: center;
+    justify-content: center;
+}
+
+#tech3im {
+    padding-top:50px;
+    width: 70vw;
+    padding-bottom:50px;
+}
