@@ -354,6 +354,7 @@ footer p {
     height: 400px;
     width: auto;
     border: 5px solid #000;
+    max-width:80vw;
 }
 
 .width-txt-s {
@@ -362,6 +363,7 @@ footer p {
     margin-bottom:-40px;
     margin-left:30px;
     margin-right:30px;
+    max-width: 400px;
 }
 
 #prob2 {
@@ -393,6 +395,7 @@ footer p {
     padding-left: var(--viewport-gap2);
     height: 500px;
     width: auto;
+    max-width: 95vw;
 }
 
 #sec3txt {
