@@ -294,8 +294,14 @@ footer {
     justify-content: center; /* Horizontal centering */
     text-align: center;
     background-color: #063623;
-    height: 50px;
+    height: 150px;
 }
+
+#footer-logo {
+    height: 100px;
+}
+
+
 
 footer p {
     color:white;
