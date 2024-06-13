@@ -433,7 +433,7 @@ footer p {
     overflow:visible;
     display: flex; 
     justify-content: center;
-    height: 55vh;
+    min-height: 55vh;
 }
 
 #tech-bg {
@@ -460,7 +460,7 @@ footer p {
 
 #tech2 {
     text-align: center;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 #tech2txt1 {
@@ -473,7 +473,7 @@ footer p {
 }
 
 #tech2im {
-    width: 70vw;
+    width: 65vw;
     padding-top:0px
 }
 
