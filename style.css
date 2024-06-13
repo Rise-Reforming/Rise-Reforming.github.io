@@ -135,6 +135,8 @@ nav a:hover {
 
 #titletext {
     font-size: 90px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
 }
 
 .custom-p2 {
@@ -161,7 +163,7 @@ nav a:hover {
 }
 
 #caption1 {
-    font-family: 'Lucida Sans';
+    font-family: 'Archivo';
     font-size: 25px;
     color: black;
     transition: opacity .5s ease-in-out;
@@ -197,6 +199,7 @@ nav a:hover {
     width: 100%;
     height: 100%;
     background-image: url('images/PLASTIC\ LANDFILL.jpg'); 
+
     background-size: cover;
     background-position: center;
     opacity: .30; /* Set opacity to create a semi-transparent overlay */
