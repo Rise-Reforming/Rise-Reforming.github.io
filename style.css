@@ -168,7 +168,7 @@ nav a:hover {
     color: black;
     transition: opacity .5s ease-in-out;
     font-weight: 5000;
-    padding-top:70px;
+    padding-top:10px;
 }
 
 
@@ -193,7 +193,7 @@ nav a:hover {
 }
 
 .background-image1 {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -260,7 +260,7 @@ button:hover {
 }
 
 .image-container img {
-    width: 300px;
+    width: 400px;
     height: auto;
     margin: 10 px;
 }
@@ -399,6 +399,7 @@ footer p {
     align-items: center; /* Center items vertically */
     flex-wrap: wrap;
     justify-content: center;
+    background-color: white;
 }
 
 #sec3im {
@@ -422,6 +423,7 @@ footer p {
     align-items: center; /* Center items vertically */
     flex-wrap: wrap;
     justify-content: center;
+    background-color: white;
 }
 
 #sec4im {

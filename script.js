@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const header2 = document.querySelector('header2');
 
     function checkWidth() {
-        if (window.innerWidth < 800) { 
+        if (window.innerWidth < 900) { 
             header.classList.add('invis');
             header2.classList.remove('invis');
             document.getElementById('main1').style.padding = '120px';
