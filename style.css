@@ -255,14 +255,13 @@ button:hover {
     position: relative; /* Ensure button is positioned relative */
     z-index: 1; /* Set a higher z-index to ensure the button is clickable */
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: center;
 }
 
 .image-container img {
-    width: 400px;
+    width: 28vw;
     height: auto;
-    margin: 10 px;
 }
 
 .image-container a img {
@@ -329,8 +328,8 @@ footer p {
 }
 
 #bios {
-    margin-top: 50px;
-    gap: var(--viewport-gap2);
+    margin-top: 0px;
+    /*gap: var(--viewport-gap2);*/
     flex: 1; 
     padding: 0;
 }
