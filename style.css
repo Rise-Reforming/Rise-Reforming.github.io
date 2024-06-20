@@ -168,7 +168,15 @@ nav a:hover {
     color: black;
     transition: opacity .5s ease-in-out;
     font-weight: 5000;
-    padding-top:10px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.divider {
+    border: none;
+    height: 2px; /* Adjust the height as needed */
+    background-color: black;
+    margin: 20px 0; /* Adjust the margin as needed */
 }
 
 
