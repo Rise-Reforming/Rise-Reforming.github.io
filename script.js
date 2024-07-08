@@ -118,7 +118,7 @@ window.addEventListener('scroll', function() {
 
 
 
-let texts = ["Tomorrow's Value", "Today's Waste"]; // Array of texts to cycle through
+let texts = ["Tomorrow's\u00A0Value", "Today's\u00A0Waste"]; // Array of texts to cycle through
 let currentIndex = 0; // Index of the current text
 const pElement = document.querySelector('.custom-p1');
 
