@@ -580,3 +580,21 @@ footer p {
 #space {
     min-height: 30vh;
 }
+
+#teamh1 {
+    font-size: 90px;
+    color: rgba(0, 0, 0, 1); 
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700; 
+    opacity: 1;
+    margin-top:5px
+}
+
+#teamh2 {
+    font-size: 90px;
+    color: rgba(0, 0, 0, 1); 
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700; 
+    opacity: 1;
+    margin-top:150px
+}
