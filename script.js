@@ -51,6 +51,50 @@ window.addEventListener('scroll', function() {
     }
 });
 
+function addHoverListeners() {
+    var header = document.querySelector('header');
+    var header2 = document.querySelector('header2');
+    var logos = document.querySelectorAll('.logo img');
+
+    header.addEventListener('mouseover', function() {
+        if (header.classList.contains('minimized')) {
+            header.classList.remove('minimized');
+            logos.forEach(function(logo) {
+                logo.style.height = '100px'; // Adjust the height of each logo image
+            });
+        }
+    });
+
+    header.addEventListener('mouseout', function() {
+        if (window.scrollY > 25) {
+            header.classList.add('minimized');
+            logos.forEach(function(logo) {
+                logo.style.height = '40px'; // Adjust the height of each logo image
+            });
+        }
+    });
+
+    header2.addEventListener('mouseover', function() {
+        if (header2.classList.contains('minimized')) {
+            header2.classList.remove('minimized');
+            logos.forEach(function(logo) {
+                logo.style.height = '100px'; // Adjust the height of each logo image
+            });
+        }
+    });
+
+    header2.addEventListener('mouseout', function() {
+        if (window.scrollY > 25) {
+            header2.classList.add('minimized');
+            logos.forEach(function(logo) {
+                logo.style.height = '40px'; // Adjust the height of each logo image
+            });
+        }
+    });
+}
+
+addHoverListeners();
+
 // Add an event listener to the button
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("myButton").addEventListener("click", function() {

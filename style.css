@@ -112,7 +112,7 @@ nav a:hover {
 }
 
 .minimized {
-    padding: 8px 0; /* Adjust padding to make header smaller */
+    padding: 12px 0; /* Adjust padding to make header smaller */
     font-size: 10px !important;
 }
 
