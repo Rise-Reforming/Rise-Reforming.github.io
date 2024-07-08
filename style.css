@@ -116,12 +116,8 @@ nav a:hover {
 
 .custom-p1 {
     margin: 0;
-    font-size: 100px;
-    color: rgb(0, 0, 0); /* Very thick letters */
     /*font-family: 'Poppins', sans-serif; /* Use the Poppins font */
     /*font-family: 'Arial Black', Gadget, sans-serif;*/
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500; /* S
     /*z-index: 2000;*/
     overflow:visible;
     display: flex; 
@@ -130,13 +126,19 @@ nav a:hover {
     margin-bottom: 50px;
     text-align: center;
     opacity: 1;
-    transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;   
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500; 
+    font-size: 100px;
+    color: rgb(0, 0, 0); /* Very thick letters */
+    
 }
 
 #titletext {
-    font-size: 90px;
+    font-size: 85px;
     font-family: 'Archivo', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
+    margin-bottom:0px;
 }
 
 .custom-p2 {
@@ -163,7 +165,7 @@ nav a:hover {
 }
 
 #caption1 {
-    font-family: 'Archivo';
+    font-family: 'Archivo', sans-serif;
     font-size: 25px;
     color: black;
     transition: opacity .5s ease-in-out;
