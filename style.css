@@ -110,7 +110,8 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline; /* Add hover effect if desired */
+    text-decoration: none; /* Add hover effect if desired */
+    color:rgb(196, 175, 56);
 }
 
 .contact-link {
@@ -126,7 +127,9 @@ nav a:hover {
 }
 
 .contact-link:hover {
-    background-color: #0056b3; /* Darker background color on hover */
+    /*background-color: #0056b3; /* Darker background color on hover */
+    background-color:rgb(196, 175, 56);
+    color:white;
     text-decoration:none;
 }
 
