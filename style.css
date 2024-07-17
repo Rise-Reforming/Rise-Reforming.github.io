@@ -127,6 +127,7 @@ nav a:hover {
 
 .contact-link:hover {
     background-color: #0056b3; /* Darker background color on hover */
+    text-decoration:none;
 }
 
 .minimized {
