@@ -95,7 +95,7 @@ header2 {
 }
 
 nav {
-    padding-right: 100px; /* Adjust padding to create space from the right edge */
+    padding-right: 110px; /* Adjust padding to create space from the right edge */
     display: flex;
 }
 
@@ -104,11 +104,29 @@ nav a {
     text-decoration: none;
     margin-left: 25px; /* Space between links */
     font-size: 18px; /* Adjust font size as needed */
+    padding-top: 10px;
+    padding-bottom:10px;
     /*margin-right: 20px;*/
 }
 
 nav a:hover {
     text-decoration: underline; /* Add hover effect if desired */
+}
+
+.contact-link {
+    background-color: #000000; /* Background color of the box */
+    color: white; /* Text color */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    border-radius: 10px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-link:hover {
+    background-color: #0056b3; /* Darker background color on hover */
 }
 
 .minimized {
