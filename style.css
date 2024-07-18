@@ -477,6 +477,7 @@ footer p {
 }
 
 #sec4im {
+    padding-top:20px;
     width:90vw;
 }
 
@@ -486,7 +487,7 @@ footer p {
     min-width: 160px;
     padding-right: var(--viewport-gap2);
     padding-left: var(--viewport-gap2);
-    max-width:80vh;
+    max-width:85vh;
 }
 
 #tech1 {
@@ -604,7 +605,7 @@ footer p {
 }
 
 #space {
-    min-height: 30vh;
+    min-height: 5vh;
 }
 
 #teamh1 {
