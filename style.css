@@ -626,3 +626,39 @@ footer p {
     margin-top:150px
 }
 
+#learn-more-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; 
+    background-color:  rgb(118, 145, 118);  
+    padding: 20px; /* Padding around the section */
+    box-sizing: border-box; /* Ensure padding is included in total height/width */
+}
+
+/* Styles for the navigation within the section */
+#learn-more-sec nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 105px;
+}
+
+/* Styles for the button */
+#learn-more {
+    display: inline-block;
+    padding: 15px 30px; /* Padding for the button */
+    background-color: #000000; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 15px; /* Rounded corners for the button */
+    font-size: 50px; /* Increase font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;
+}
+
+/* Hover effect for the button */
+#learn-more:hover {
+    background-color:rgb(196, 175, 56);
+}
