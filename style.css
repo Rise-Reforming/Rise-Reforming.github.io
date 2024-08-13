@@ -579,7 +579,7 @@ footer p {
     overflow:visible;
     display: flex; 
     justify-content: center;
-    min-height: 55vh;
+    min-height: 20vh;
 }
 
 #impact-bg {
