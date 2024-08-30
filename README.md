@@ -1,5 +1,7 @@
 # Website Layout Planning
 
+### This is the readme of the new branch for v2
+
 ### Pages
 - Home
 - Technology
