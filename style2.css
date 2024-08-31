@@ -3,7 +3,7 @@
 body {
     margin: 0;
     width: 100%;
-    background-color: #638566;
+    background-color: whitesmoke;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
@@ -124,4 +124,53 @@ footer a p {
     height: 80px;
     transition: all 0.5s ease;
     margin-left:15px;
+}
+
+#home-title {
+    padding-top:100px;
+    
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+#home-title p {
+    font-size: 50px;
+    text-align: center;
+}
+
+#home-front div{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+#home-front hr {
+    flex-grow: 1; 
+    border: none;
+    border-top: 2px solid #000; 
+    margin: 0; 
+}
+
+#hr-L {
+    position: relative; 
+    z-index: 1000; 
+    margin-right:-40px;
+}
+
+#hr-R {
+    position: relative; 
+    z-index: 1000; 
+    margin-left:-40px;
+}
+
+#home-team-image {
+    padding-top:10px;
+    width:50vw;
+}
+
+#home-image-bottom {
+    margin:0;
+    border-top: 5px solid #000;
+    padding-bottom:20px;
 }
