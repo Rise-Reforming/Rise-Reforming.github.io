@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: #638566;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed; 
+    width: 100%; 
+    top: 0;
+    left: 0;
+    padding: 18px 9px;
+    background-color: #063623;
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    text-align: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    opacity: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 40px;
+    transition: all 0.5s ease;
+}
+
+#RR-text {
+    margin-left: -20px;
+}
+
+header nav {
+    padding-right: 60px; 
+    display: flex;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px; 
+    font-size: 15px; 
+    padding-top: 10px;
+    padding-bottom:10px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bolder;
+    position: relative;
+}
+
+header nav a:hover {
+    text-decoration: none;
+    color:rgb(196, 175, 56);
+}
+
+header nav a:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 2px;
+    background-color: #ffffff; /* Divider color */
+    z-index: 1000;
+}
+
+.contact-link {
+    background-color: #000000; 
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+}
+
+.contact-link:hover {
+    /*background-color: #0056b3; /* Darker background color on hover */
+    background-color:rgb(196, 175, 56);
+    color:white;
+    text-decoration:none;
+}
+
+
+footer {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-color: #063623;
+    height: 150px;
+    justify-content: space-between;
+}
+
+footer a {
+    margin-right: 100px;
+    text-decoration: none;
+}
+
+footer a p {
+    line-height: 1.65;
+    color: wheat;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 80px;
+    transition: all 0.5s ease;
+    margin-left:15px;
+}
