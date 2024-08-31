@@ -15,16 +15,21 @@ header {
     left: 0;
     padding: 18px 9px;
     background-color: #063623;
-    background-size: cover;
-    background-position: center;
     color: white; 
     text-align: center; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.5s ease;
-    opacity: 100%;
+    /*transition: all 0.2s ease;*/
+    opacity: 1;
+    z-index: 6000;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+
+    background-image: url('images/crystalgif.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100vw;
 }
 
 .header-logo {
@@ -72,7 +77,7 @@ header nav a:not(:last-child)::after {
     transform: translateY(-50%);
     height: 50%;
     width: 2px;
-    background-color: #ffffff; /* Divider color */
+    background-color: #ffffff; 
     z-index: 1000;
 }
 
@@ -103,6 +108,12 @@ footer {
     background-color: #063623;
     height: 150px;
     justify-content: space-between;
+    background-image: url('images/crystalgif.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100vw;
+    
 }
 
 footer a {
@@ -124,19 +135,6 @@ footer a p {
     height: 80px;
     transition: all 0.5s ease;
     margin-left:15px;
-}
-
-#home-title {
-    padding-top:100px;
-    
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-}
-
-#home-title p {
-    font-size: 50px;
-    text-align: center;
 }
 
 #home-front {
@@ -196,11 +194,100 @@ footer a p {
 
 #home-team-image {
     padding-top:10px;
-    width:50vw;
+    width:51vw;
 }
 
 #home-image-bottom {
     margin:0;
-    border-top: 5px solid #000;
-    padding-bottom:20px;
+    border-top: 4px solid #000;
+    /*padding-bottom:20px;*/
+    border-bottom: 1px solid #000;
+    margin-bottom:0;
+}
+
+
+#home-sec2 {
+    background-color: rgb(3, 3, 3);
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    padding: 30px;
+}
+
+#home-sec2 div {
+    align-items: center; 
+    justify-content: center; 
+    display: flex; 
+    gap: clamp(30px, 2vw, 60px);
+}
+
+#RISE {
+    height: clamp(50px, 2vw, 150px);
+    width:auto;
+    max-width:40vw;
+}
+
+#REFORMING {
+    height: clamp(50px, 2vw, 150px);
+    width: auto;
+    max-width:40vw;
+}
+
+#home-sec2-hr {
+    margin-top:18px;
+    width:60vw;
+    border-top: 3px solid lightgoldenrodyellow;
+    border-radius: 40%;
+}
+
+#home-sec3 {
+    min-height: 400px;
+    background-color: whitesmoke;
+}
+
+#home-sec3 {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between; /* Space between the title area and content area */
+    padding: 20px;
+    min-height: 500px;
+    background-color: #f8f8f8;
+}
+
+#home-sec3-title {
+    width: 30%; 
+    padding-right: 20px;
+    border-left: 4px solid #3498db; 
+    box-sizing: border-box;
+}
+
+#home-sec3-title-text {
+    margin: 0; 
+    padding-left: 15px; 
+    font-size: 50px;
+    color: #333;
+}
+
+#home-sec3-content-area {
+    width: 65%; 
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    box-sizing: border-box;
+}
+
+#home-sec3-image1-container, #home-sec3-image2-container {
+    width: 38%; 
+}
+
+#home-sec3-image1, #home-sec3-image2 {
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+#home-sec3-description1, #home-sec3-description2 {
+    margin-top: 10px; 
+    font-size: 16px;
+    color: #666;
 }
