@@ -1,4 +1,35 @@
+/* Color Theme: Black, Whitesmoke, and #BB923B gold */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #030303;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888686;
+    border-radius: 6px;
+    border: 3px solid #282828;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #363636;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 body {
     margin: 0;
@@ -6,6 +37,17 @@ body {
     background-color: whitesmoke;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+body.fade-in {
+    opacity: 1;
 }
 
 header {
@@ -94,7 +136,6 @@ header nav a:not(:last-child)::after {
 }
 
 .contact-link:hover {
-    /*background-color: #0056b3; /* Darker background color on hover */
     background-color:rgb(196, 175, 56);
     color:white;
     text-decoration:none;
@@ -138,7 +179,8 @@ footer a p {
 }
 
 #home-front {
-    padding-top:100px;
+    padding-top:150px;
+    background: linear-gradient(180deg, rgba(187,146,59,1) 85%, rgba(3,3,3,1) 100%);;
 }
 
 #home-front div{
@@ -194,7 +236,7 @@ footer a p {
 
 #home-team-image {
     padding-top:10px;
-    width:51vw;
+    width:clamp(54vw, 4vw, 1000px);
 }
 
 #home-image-bottom {
@@ -211,13 +253,14 @@ footer a p {
     align-items: center; 
     justify-content: center; 
     text-align: center;
-    padding: 30px;
+    padding: 50px;
 }
 
 #home-sec2 div {
     align-items: center; 
     justify-content: center; 
     display: flex; 
+    /*flex-direction: column;*/
     gap: clamp(30px, 2vw, 60px);
 }
 
@@ -234,60 +277,115 @@ footer a p {
 }
 
 #home-sec2-hr {
-    margin-top:18px;
+    margin-top:30px;
     width:60vw;
     border-top: 3px solid lightgoldenrodyellow;
     border-radius: 40%;
 }
 
-#home-sec3 {
-    min-height: 400px;
-    background-color: whitesmoke;
+#home-page {
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
 }
+
+#home-learn-more { 
+    min-height: 40vh;
+    background: linear-gradient(180deg, rgba(3,3,3,1) 0%, rgba(187,146,59,1) 100%);
+    flex-grow: 1;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    justify-content: top; 
+    /*On click, or direct scroll, accelerate down to next section*/
+}
+
+#home-learn-more-txt {
+    margin-top:50px;
+    color: whitesmoke;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all 0.2s ease;
+    color:#BB923B;
+    color:wheat;
+}
+
+#home-learn-more-txt:hover {
+    font-size: 22px;
+}
+
+#home-arrow {
+    height:80px;
+    transition: all 0.2s ease;
+}
+
+#home-arrow:hover {
+    height:88px;
+}
+
+
 
 #home-sec3 {
     display: flex;
     align-items: flex-start; /* Align items at the top */
     justify-content: space-between; /* Space between the title area and content area */
-    padding: 20px;
-    min-height: 500px;
-    background-color: #f8f8f8;
+    padding: 40px;
+    /*min-height: 500px;*/
+    background-color: whitesmoke;
+    background-color: lightgrey;
 }
 
 #home-sec3-title {
     width: 30%; 
-    padding-right: 20px;
-    border-left: 4px solid #3498db; 
+    padding-right: 50px;
+    border-left: 4px solid #000000; 
     box-sizing: border-box;
+    margin-right: 30px;
 }
 
 #home-sec3-title-text {
     margin: 0; 
     padding-left: 15px; 
     font-size: 50px;
-    color: #333;
+    color: #000000;
+    font-size: clamp(20px, 5.5vw, 100px);
+    margin-bottom: 30px;
+}
+
+#home-sec3-title-text-sub {
+    padding-left: 15px;
+    color: #000000;
+    font-size: clamp(18px, 3vw, 40px);
 }
 
 #home-sec3-content-area {
     width: 65%; 
     display: flex;
-    justify-content: space-between; 
+    /*justify-content: space-between; */
+    justify-content: right;
     gap: 20px; 
     box-sizing: border-box;
 }
 
 #home-sec3-image1-container, #home-sec3-image2-container {
-    width: 38%; 
+    width: 45%; 
 }
 
 #home-sec3-image1, #home-sec3-image2 {
     width: 100%; 
     height: auto; 
     display: block;
+    border: 5px solid black;
+    border-radius: 5px;
 }
 
 #home-sec3-description1, #home-sec3-description2 {
     margin-top: 10px; 
-    font-size: 16px;
+    font-size: clamp(15px, 1.8vw, 32px);
     color: #666;
+}
+
+#home-sec4 {
+    height:1000px;
 }

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header style="height: 80px;">
         <div class="header-logo">
             <img src="images/rr_logo_clear.png" alt="Rise Reforming">
             <img src="images/RR_text_only.png" alt="RR_text_only">
@@ -22,6 +22,7 @@
         </nav>
     </header>
 
+    <div id="home-page">
     <section id="home-front">
         <div>
             <div class="line-container">
@@ -54,21 +55,42 @@
         <hr id="home-sec2-hr">
     </section>
 
+    <section id="home-learn-more">
+        <p id="home-learn-more-txt">Learn more about us...</p>
+        <div>
+            <img src="images/down-arrow_processed.png" alt="Down Arrow" id="home-arrow" class="hidden">
+        </div>
+    </section>
+    </div>
+    
+
     <section id="home-sec3">
         <div id="home-sec3-title">
-            <h2 id="home-sec3-title-text">A Tale<br>of Two Problems: <br></h2>
-            <h4>Plastic Waste and Fossil-Based Chemical Emissions</h4>
+            <h2 id="home-sec3-title-text" class="hidden">A&nbsp;Tale<br>of&nbsp;Two Problems: <br></h2>
+            <h4 id="home-sec3-title-text-sub" class="hidden">Plastic Waste and Fossil-Based Chemical Emissions</h4>
         </div>
         <div id="home-sec3-content-area">
             <div id="home-sec3-image1-container">
-                <img src="images/trash1.png" alt="Image 1" id="home-sec3-image1">
-                <p id="description1">Description for Image 1</p>
+                <img src="images/trash1.png" alt="Image 1" id="home-sec3-image1" class="hidden">
+                <p id="home-sec3-description1" class="hidden">Only 5% of the 50 million tons of
+                    plastic waste generated in the US annually is recycled.
+                    In landfills, 40% decomposes in 25 years, but the other
+                    60% stays around for thousands.
+                </p>
             </div>
             <div id="home-sec3-image2-container">
-                <img src="images/emissions1.png" alt="Image 2" id="home-sec3-image2">
-                <p id="description2">Description for Image 2</p>
+                <img src="images/emissions1.png" alt="Image 2" id="home-sec3-image2" class="hidden">
+                <p id="home-sec3-description2" class="hidden">The fossil-based chemical industry still
+                    accounts for 5% of greenhouse gass emissions and must be 
+                    decarbonized by 2050 in order to meet the United Nation's
+                    net zero carbon emissions goals.
+                </p>
             </div>
         </div>
+    </section>
+
+    <section id="home-sec4">
+
     </section>
 
     <footer>
