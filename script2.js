@@ -41,3 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 });
+
+
+function addMarginIfSmallScreen() {
+    const element = document.getElementById('home-arrows-img'); 
+    if (window.innerWidth < 800) {
+        element.style.marginTop = '50px';
+    } else {
+        element.style.marginTop = '0'; 
+    }
+}
+window.onload = addMarginIfSmallScreen;
+window.onresize = addMarginIfSmallScreen;
