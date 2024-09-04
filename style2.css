@@ -434,25 +434,6 @@ footer a p {
     margin: 20px auto; 
 }
 
-
-/*
-#home-bottom {
-    height: 500px;
-    background-image: url('images/bgt.jpg');
-    background-size: cover;
-    background-position: center;
-    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    max-width: 100%;
-    padding: 0 20px;
-}*/
-
 #home-cblm {
     color:black;
     text-align: center;
@@ -461,10 +442,9 @@ footer a p {
 }
 
 #home-tech-links {
-    position: relative; /* Ensure button is positioned relative */
-    z-index: 1; /* Set a higher z-index to ensure the button is clickable */
+    position: relative;
+    z-index: 1; 
     display: flex;
-    /*flex-wrap: wrap;*/
     justify-content: center;
 }
 
@@ -478,5 +458,5 @@ footer a p {
 }
 
 #home-tech-links a:hover img {
-    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    transform: scale(1.1);
 }
