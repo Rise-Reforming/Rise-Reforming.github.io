@@ -399,11 +399,36 @@ footer a p {
 #home-sol-txt h2 {
     border-left: 3px black solid;
     padding-left: 30px;
-    font-size: clamp(35px, 3vw, 100px);
+    font-size: clamp(30px, 3vw, 100px);
 }
 
 #home-sol-txt p {
     color:#030303;
-    font-size: clamp(12px, 3vw, 30px);
+    font-size: clamp(12px, 2.8vw, 30px);
     max-width: 500px;
+}
+
+#home-arrow2-div {
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#home-arrow2 {
+    height:80px;
+    transition: all 0.2s ease;
+}
+
+#home-arrow2:hover {
+    height:88px;
+}
+
+#home-hr2 {
+    width: 60%; 
+    height: 2px; 
+    background-color: #BB923B; 
+    border: none; 
+    border-radius: 40%;
+    margin: 20px auto; 
 }

@@ -3,7 +3,7 @@
 // Function that controls scroll down from arrow on home page
 document.addEventListener("DOMContentLoaded", function() {
     const downScroll = document.getElementById("home-learn-more");
-    const scrollAmount = 995;
+    const scrollAmount = 970;
 
     function scrollDown() {
         window.scrollBy({
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function addMarginIfSmallScreen() {
     const element = document.getElementById('home-arrows-img'); 
-    if (window.innerWidth < 800) {
+    if (window.innerWidth < 830) {
         element.style.marginTop = '50px';
     } else {
         element.style.marginTop = '0'; 
@@ -53,3 +53,18 @@ function addMarginIfSmallScreen() {
 }
 window.onload = addMarginIfSmallScreen;
 window.onresize = addMarginIfSmallScreen;
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const downScroll = document.getElementById("home-arrow2");
+    const scrollAmount = 820;
+
+    function scrollDown() {
+        window.scrollBy({
+            top: scrollAmount,
+            behavior: "smooth"
+        });
+    }
+
+    downScroll.addEventListener("click", scrollDown);
+});
