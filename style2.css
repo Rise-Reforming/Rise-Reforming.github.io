@@ -298,7 +298,6 @@ footer a p {
     align-items: center; 
     flex-direction: column;
     justify-content: top; 
-    /*On click, or direct scroll, accelerate down to next section*/
 }
 
 #home-learn-more-txt {
