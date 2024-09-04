@@ -399,7 +399,7 @@ footer a p {
 #home-sol-txt h2 {
     border-left: 3px black solid;
     padding-left: 30px;
-    font-size: clamp(30px, 3vw, 100px);
+    font-size: clamp(40px, 3vw, 100px);
 }
 
 #home-sol-txt p {

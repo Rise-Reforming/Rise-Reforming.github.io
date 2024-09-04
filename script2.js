@@ -3,11 +3,15 @@
 // Function that controls scroll down from arrow on home page
 document.addEventListener("DOMContentLoaded", function() {
     const downScroll = document.getElementById("home-learn-more");
-    const scrollAmount = 970;
+    const targetSection = document.getElementById("home-sec4-wrap");
+    const header = document.querySelector('header'); // Assuming your header element is <header>
 
     function scrollDown() {
-        window.scrollBy({
-            top: scrollAmount,
+        const headerHeight = header.offsetHeight; // Get the height of the header
+        const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+        window.scrollTo({
+            top: targetPosition,
             behavior: "smooth"
         });
     }
