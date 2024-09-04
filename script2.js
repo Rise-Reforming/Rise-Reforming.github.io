@@ -61,11 +61,15 @@ window.onresize = addMarginIfSmallScreen;
 
 document.addEventListener("DOMContentLoaded", function() {
     const downScroll = document.getElementById("home-arrow2");
-    const scrollAmount = 820;
+    const targetSection = document.getElementById("home-one-sol");
+    const header = document.querySelector('header');
 
     function scrollDown() {
-        window.scrollBy({
-            top: scrollAmount,
+        const headerHeight = header.offsetHeight; 
+        const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - headerHeight + 15;
+
+        window.scrollTo({
+            top: targetPosition,
             behavior: "smooth"
         });
     }

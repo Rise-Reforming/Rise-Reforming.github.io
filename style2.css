@@ -414,22 +414,32 @@ footer a p {
     display:flex;
     align-items: center; 
     justify-content: center;
-    padding-bottom: 20px;
+    margin-top: -15px;
+    padding-bottom: 40px;
 }
 
 #home-arrow2 {
-    height:80px;
+    height:40px;
     transition: all 0.2s ease;
 }
 
-#home-arrow2:hover {
-    height:88px;
+#home-arrow2-div img:hover {
+    height:50px;
 }
 
 #home-hr2 {
     width: 60%; 
     height: 2px; 
     background-color: #BB923B; 
+    border: none; 
+    border-radius: 40%;
+    margin: 20px auto; 
+}
+
+#home-hr3 {
+    width: 60%; 
+    height: 2px; 
+    background-color: black;
     border: none; 
     border-radius: 40%;
     margin: 20px auto; 
@@ -442,6 +452,7 @@ footer a p {
     font-style: italic;
     z-index: 1000000;
     font-size: clamp(10px, 3vw, 25px);
+    padding-top: 30px;
 }
 
 #home-tech-links {
@@ -464,3 +475,4 @@ footer a p {
 #home-tech-links a:hover img {
     transform: scale(1.1);
 }
+
