@@ -340,6 +340,7 @@ footer a p {
     font-size: clamp(40px, 5vw, 150px);
     margin:0px;
     padding-bottom: 10px;
+    font-weight: 200;
 }
 
 #home-sec4-wrap h4 {
@@ -437,8 +438,10 @@ footer a p {
 #home-cblm {
     color:black;
     text-align: center;
-    margin-bottom: -50px;
+    margin-bottom: -30px;
     font-style: italic;
+    z-index: 1000000;
+    font-size: clamp(10px, 3vw, 25px);
 }
 
 #home-tech-links {
@@ -446,6 +449,7 @@ footer a p {
     z-index: 1; 
     display: flex;
     justify-content: center;
+    background: linear-gradient(180deg, rgba(1,1,1,0), rgba(3,3,3,0) 100%);
 }
 
 #home-tech-links img {
