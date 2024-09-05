@@ -1,3 +1,5 @@
+
+/* STYLING FOR THE SITE AS A WHOLE */
 /* Color Theme: Black, Whitesmoke, and #BB923B gold */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -177,6 +179,8 @@ footer a p {
     transition: all 0.5s ease;
     margin-left:15px;
 }
+
+/* STYLING FOR THE HOME PAGE */
 
 #home-front {
     padding-top:145px;
@@ -449,9 +453,16 @@ footer a p {
     text-align: center;
     margin-bottom: -30px;
     font-style: italic;
-    z-index: 1000000;
-    font-size: clamp(10px, 3vw, 25px);
+    z-index: 1;
+    font-size: clamp(10px, 2.6vw, 25px);
     padding-top: 30px;
+}
+
+#home-tech-links-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, whitesmoke, grey 100%);
 }
 
 #home-tech-links {
@@ -459,7 +470,6 @@ footer a p {
     z-index: 1; 
     display: flex;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(1,1,1,0), rgba(3,3,3,0) 100%);
 }
 
 #home-tech-links img {
@@ -474,4 +484,7 @@ footer a p {
 #home-tech-links a:hover img {
     transform: scale(1.1);
 }
+
+/* STYLING FOR THE TEAM PAGE */
+
 
