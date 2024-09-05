@@ -487,4 +487,97 @@ footer a p {
 
 /* STYLING FOR THE TEAM PAGE */
 
+#team-title {
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 50px;
+}
 
+#team-title-txt {
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+#team-hr1 {
+    width: 60%; 
+    height: 2px; 
+    background-color: #000000; 
+    border: none; 
+    border-radius: 40%;
+    margin: 20px auto; 
+}
+
+#team-members {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+#team-members img {
+    width: 350px;
+    transition: all 0.2s ease;
+    margin-left:25px;
+    margin-right:25px;
+    margin-top: 50px;
+}
+
+#team-members img:hover {
+    scale: 1.05;
+}
+
+#team-see-advisors {
+    display:flex;
+    justify-content:center;
+}
+
+#team-see-advisors img {
+    padding-top: 50px;
+    width:40px;
+    transition: all 0.2s ease;
+}
+
+#team-see-advisors img:hover {
+    scale: 1.1;
+}
+
+#team-title2 {
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#team-title-txt2 {
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+#team-hr2 {
+    width: 60%; 
+    height: 2px; 
+    background-color: #000000; 
+    border: none; 
+    border-radius: 40%;
+    margin: 20px auto; 
+}
+
+#team-advisors {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+}
+
+#team-advisors img {
+    width: 250px;
+    transition: all 0.2s ease;
+    margin-left:25px;
+    margin-right:25px;
+    margin-top: 50px;
+}
+
+#team-advisors img:hover {
+    scale: 1.05;
+}

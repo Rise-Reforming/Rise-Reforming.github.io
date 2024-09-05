@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// Function to change margin above arrows image on the home page
 function addMarginIfSmallScreen() {
     const element = document.getElementById('home-arrows-img'); 
     if (window.innerWidth < 830) {
@@ -59,6 +60,7 @@ window.onload = addMarginIfSmallScreen;
 window.onresize = addMarginIfSmallScreen;
 
 
+// Function to scroll on click to bottom of home
 document.addEventListener("DOMContentLoaded", function() {
     const downScroll = document.getElementById("home-arrow2");
     const targetSection = document.getElementById("home-one-sol");
@@ -72,6 +74,27 @@ document.addEventListener("DOMContentLoaded", function() {
             top: targetPosition,
             behavior: "smooth"
         });
+    }
+
+    downScroll.addEventListener("click", scrollDown);
+});
+
+
+// Function to scroll down to advisors of team page
+document.addEventListener("DOMContentLoaded", function() {
+    const downScroll = document.getElementById("team-see-advisors");
+    const targetSection = document.getElementById("team-advisors");
+    const header = document.querySelector('header');
+
+    function scrollDown() {
+        const headerHeight = header.offsetHeight; 
+        const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - headerHeight + 15;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth"
+        });
+        downScroll.style.opacity = 0;
     }
 
     downScroll.addEventListener("click", scrollDown);
