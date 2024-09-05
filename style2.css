@@ -124,7 +124,7 @@ header nav a:not(:last-child)::after {
 }
 
 .contact-link {
-    background-color: #000000; 
+    background-color: #413f3f; 
     color: white;
     padding-left: 10px;
     padding-right: 10px;
