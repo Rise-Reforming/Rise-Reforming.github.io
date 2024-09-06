@@ -568,6 +568,7 @@ footer a p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 80px;
+    padding-top: 0px;
 }
 
 #team-advisors img {
