@@ -99,3 +99,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
     downScroll.addEventListener("click", scrollDown);
 });
+
+
+// Function to make Impact title disappear smoothly
+document.addEventListener("DOMContentLoaded", function() {
+    const targetText = document.getElementById("impact-title-main");
+    const scrollTriggerPoint = 15; 
+
+    window.addEventListener("scroll", function() {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > scrollTriggerPoint) {
+            targetText.style.opacity = 0; 
+        } else {
+            targetText.style.opacity = 1;
+        }
+    });
+});
+
+
+// Function for parallax scroll of impact background
+document.addEventListener("scroll", function() {
+    const scrollPosition = window.scrollY;
+    const backgroundElement = document.getElementById("impact-title");
+    backgroundElement.style.transform = `translateY(${-scrollPosition * 0.2}px)`;
+});
