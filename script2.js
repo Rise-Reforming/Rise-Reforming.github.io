@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Function to make Impact title disappear smoothly
 document.addEventListener("DOMContentLoaded", function() {
     const targetText = document.getElementById("impact-title-main");
-    const scrollTriggerPoint = 15; 
+    const scrollTriggerPoint = 30; 
 
     window.addEventListener("scroll", function() {
         const scrollPosition = window.scrollY;
