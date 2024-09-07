@@ -125,6 +125,7 @@ document.addEventListener("scroll", function() {
     backgroundElement.style.transform = `translateY(${-scrollPosition * 0.2}px)`;
 });
 
+/*
 // Function to make Tech top section disappear smoothly
 document.addEventListener("DOMContentLoaded", function() {
     const targetText1 = document.getElementById("tech-title-txt");
@@ -144,7 +145,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
 // Function to switch images on the tech page top
 document.addEventListener("DOMContentLoaded", function() {
     const techIm1 = document.getElementById("tech-im1");
@@ -155,14 +155,61 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentImageIndex = 0;
 
     setInterval(function() {
-        // Fade out
         techIm1.style.opacity = 0;
 
-        // After fade-out, switch the image and fade back in
         setTimeout(function() {
             currentImageIndex = (currentImageIndex + 1) % images.length;
             techIm1.style.backgroundImage = `url(${images[currentImageIndex]})`;
             techIm1.style.opacity = 1;
-        }, 1500); // Wait for the transition to complete
-    }, 5000); // Switch every 5 seconds
+        }, 1500); // transition time
+    }, 5000); // wait time
+});
+*/
+
+// Function to make Tech top section disappear smoothly and switch images in it
+document.addEventListener("DOMContentLoaded", function() {
+    const targetText1 = document.getElementById("tech-title-txt");
+    const targetText2 = document.getElementById("tech-im1");
+    const scrollTriggerPoint = 60;
+    let isHidden = false;
+
+    window.addEventListener("scroll", function() {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > scrollTriggerPoint) {
+            targetText1.style.opacity = 0;
+            targetText2.style.opacity = 0;
+            isHidden = true; 
+        } else {
+            targetText1.style.opacity = .9;
+            targetText2.style.opacity = .9;
+            isHidden = false; 
+        }
+    });
+
+    const images = [
+        'images/bag_processed.jpg',
+        'images/dme-ball-s.png'
+    ];
+    let currentImageIndex = 0;
+
+    setInterval(function() {
+        if (!isHidden) { 
+            targetText2.style.opacity = 0;
+
+            setTimeout(function() {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                targetText2.style.backgroundImage = `url(${images[currentImageIndex]})`;
+                targetText2.style.opacity = .9;
+            }, 1500); // transition time
+        }
+    }, 5000); // wait time
+});
+
+
+// Function for parallax scroll of impact background
+document.addEventListener("scroll", function() {
+    const scrollPosition = window.scrollY;
+    const backgroundElement = document.getElementById("tech-title");
+    backgroundElement.style.transform = `translateY(${-scrollPosition * 0.2}px)`;
 });
