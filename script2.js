@@ -125,52 +125,12 @@ document.addEventListener("scroll", function() {
     backgroundElement.style.transform = `translateY(${-scrollPosition * 0.2}px)`;
 });
 
-/*
-// Function to make Tech top section disappear smoothly
-document.addEventListener("DOMContentLoaded", function() {
-    const targetText1 = document.getElementById("tech-title-txt");
-    const targetText2 = document.getElementById("tech-im1");
-    const scrollTriggerPoint = 60; 
-
-    window.addEventListener("scroll", function() {
-        const scrollPosition = window.scrollY;
-
-        if (scrollPosition > scrollTriggerPoint) {
-            targetText1.style.opacity = 0; 
-            targetText2.style.opacity = 0; 
-        } else {
-            targetText1.style.opacity = 1;
-            targetText2.style.opacity = 1;
-        }
-    });
-});
-
-// Function to switch images on the tech page top
-document.addEventListener("DOMContentLoaded", function() {
-    const techIm1 = document.getElementById("tech-im1");
-    const images = [
-        'images/bag_processed.jpg',
-        'images/dme-ball-s.png'
-    ];
-    let currentImageIndex = 0;
-
-    setInterval(function() {
-        techIm1.style.opacity = 0;
-
-        setTimeout(function() {
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-            techIm1.style.backgroundImage = `url(${images[currentImageIndex]})`;
-            techIm1.style.opacity = 1;
-        }, 1500); // transition time
-    }, 5000); // wait time
-});
-*/
 
 // Function to make Tech top section disappear smoothly and switch images in it
 document.addEventListener("DOMContentLoaded", function() {
     const targetText1 = document.getElementById("tech-title-txt");
     const targetText2 = document.getElementById("tech-im1");
-    const scrollTriggerPoint = 60;
+    const scrollTriggerPoint = 175;
     let isHidden = false;
 
     window.addEventListener("scroll", function() {
@@ -207,9 +167,24 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Function for parallax scroll of impact background
+// Function for parallax scroll of tech title background
 document.addEventListener("scroll", function() {
     const scrollPosition = window.scrollY;
     const backgroundElement = document.getElementById("tech-title");
     backgroundElement.style.transform = `translateY(${-scrollPosition * 0.2}px)`;
 });
+
+
+/*
+// Function for parallax scroll of tech bottom section
+document.addEventListener("scroll", function() {
+    const scrollPosition = window.scrollY;
+    const backgroundElement = document.getElementById("tech-sec3-txt");
+    backgroundElement.style.transform = `translateY(${-scrollPosition * 0.15}px)`;
+});
+
+document.addEventListener("scroll", function() {
+    const scrollPosition = window.scrollY;
+    const backgroundElement = document.getElementById("tech-module");
+    backgroundElement.style.transform = `translateY(${-scrollPosition * 0.15}px)`;
+});*/
