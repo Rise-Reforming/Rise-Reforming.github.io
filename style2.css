@@ -648,5 +648,53 @@ footer a p {
 /* STYLING FOR TECH PAGE STARTS HERE */
 
 #tech-title {
-    height:500px;
+    /*margin-top:100px;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content:space-evenly;
+    align-items:center;
+
+    position:fixed;
+    width: 100%;
+    height: 500px;
+    /*background-image: url('images/watergif2.gif'); */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+#tech-title-wrap {
+    height: 500px;
+}
+
+#tech-title p {
+    font-size: clamp(35px, 3.2vw, 65px);
+    font-weight: 300;
+    text-align: left;
+    max-width: 50vw;
+    margin-top:80px;
+}
+
+#tech-im1{
+    margin-top:80px;
+    height: 300px;
+    opacity: .8;
+    animation: bounce 4s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+}
+
+
+
+#tech-sec2 {
+    height: 1000px;
+    background-color:#000000;
 }
