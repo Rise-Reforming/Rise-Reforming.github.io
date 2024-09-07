@@ -644,3 +644,9 @@ footer a p {
 #impact-sec2 img {
     width: 70vw;
 }
+
+/* STYLING FOR TECH PAGE STARTS HERE */
+
+#tech-title {
+    height:500px;
+}
