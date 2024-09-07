@@ -654,7 +654,7 @@ footer a p {
     flex-wrap: wrap-reverse;
     justify-content:space-evenly;
     align-items:center;
-    transition: all 0.4s ease;
+    /*transition: all 0.4s ease;*/
 
     position:fixed;
     width: 100%;
