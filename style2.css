@@ -617,7 +617,7 @@ footer a p {
     text-align: center;
     color:#000000;
     font-size: 90px;
-    font-weight: 400; 
+    font-weight: 600; 
     margin-bottom:0;
     transition: all 0.4s ease;
 }
@@ -645,10 +645,23 @@ footer a p {
     font-weight: 300;
     font-size: 20px;
     padding-top: 30px;
+    max-width: 80vw;
+    padding-bottom: 15px;
 }
 
 #impact-sec2 img {
     width: 70vw;
+}
+
+#impact-sec3 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#impact-im2 {
+    width: 60vw;
+    padding-bottom: 50px;
 }
 
 /* STYLING FOR TECH PAGE STARTS HERE */
