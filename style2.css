@@ -585,6 +585,12 @@ footer a p {
 
 /* STYLING FOR IMPACT PAGE */ 
 
+#impact-head {
+    background:none; 
+    box-shadow: none;
+    position:absolute;
+}
+
 #impact-title {
     position:fixed;
     width: 100%;
@@ -646,6 +652,12 @@ footer a p {
 }
 
 /* STYLING FOR TECH PAGE STARTS HERE */
+
+#tech-head {
+    background:none; 
+    box-shadow: none;
+    position:absolute;
+}
 
 #tech-title {
     /*margin-top:100px;*/
