@@ -175,16 +175,74 @@ document.addEventListener("scroll", function() {
 });
 
 
-/*
-// Function for parallax scroll of tech bottom section
-document.addEventListener("scroll", function() {
-    const scrollPosition = window.scrollY;
-    const backgroundElement = document.getElementById("tech-sec3-txt");
-    backgroundElement.style.transform = `translateY(${-scrollPosition * 0.15}px)`;
-});
+document.addEventListener("DOMContentLoaded", function() {
+    const descText = document.getElementById("tech-sec4-desc");
+    const images = document.querySelectorAll("#tech-sec4-modules img");
+    
+    const descriptions = {
+        "tech-scalable": "<strong>Scalable:</strong> Scaling up production is as easy as stacking two of our shipping containers together.",
+        "tech-capex": "<strong>Lower CAPEX:</strong> Compared to large chemical plants that often cost hundreds of millions to set up, Rise Refroming's modules are extremely low cost.",
+        "tech-deploy": "<strong>Rapid Deployment:</strong> Our modules can be easily shipped on the back of an 18 wheeler, and can be deployed in as little time as just a few days.",
+        "tech-reach": "<strong>Greater Reach:</strong> Our modules can be placed directly on the site of plastic waste producers, eliminating the need to transport feedstock.",
+        "tech-lowrisk": "<strong>Low Risk:</strong> If one module fails, problems are contained to that single module, and others can continue production."
+    };
 
-document.addEventListener("scroll", function() {
-    const scrollPosition = window.scrollY;
-    const backgroundElement = document.getElementById("tech-module");
-    backgroundElement.style.transform = `translateY(${-scrollPosition * 0.15}px)`;
-});*/
+    let autoCycleInterval;
+    let isHovering = false;
+    let currentImageIndex = 0;
+
+    function showDescription(id) {
+        const desc = descriptions[id];
+        const img = document.getElementById(id);
+        
+        // Set the text and scale the icon
+        if (desc) {
+            descText.style.opacity = 0;
+            setTimeout(() => {
+                descText.innerHTML = desc;
+                descText.style.opacity = 1;
+            }, 300);
+
+            // Scale the icon
+            images.forEach(image => image.style.transform = 'scale(1)');
+            img.style.transform = 'scale(1.5)';
+        }
+    }
+
+    // Function to handle automatic cycling of descriptions
+    function autoCycleDescriptions() {
+        const imageIds = Object.keys(descriptions);
+
+        autoCycleInterval = setInterval(function() {
+            if (!isHovering) {
+                currentImageIndex = (currentImageIndex + 1) % imageIds.length;
+                showDescription(imageIds[currentImageIndex]);
+            }
+        }, 4000); // Switch every 4 seconds
+    }
+
+    // Start the auto cycle on page load
+    autoCycleDescriptions();
+
+    // Handle mouse enter and leave events for icons
+    images.forEach(img => {
+        img.addEventListener("mouseenter", function() {
+            isHovering = true;
+            clearInterval(autoCycleInterval); // Stop auto-cycling while hovering
+            showDescription(img.id);
+        });
+
+        img.addEventListener("mouseleave", function() {
+            isHovering = false;
+            descText.style.opacity = 0;
+            setTimeout(() => {
+                descText.innerHTML = "Hover on icons<br>to learn more.";
+                descText.style.opacity = 1;
+                images.forEach(image => image.style.transform = 'scale(1)'); // Reset scale
+            }, 300);
+
+            // Restart auto cycling after leaving
+            autoCycleDescriptions();
+        });
+    });
+});

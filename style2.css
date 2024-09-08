@@ -660,7 +660,7 @@ footer a p {
 }
 
 #impact-im2 {
-    width: 60vw;
+    width: 70vw;
     padding-bottom: 50px;
 }
 
@@ -767,6 +767,7 @@ footer a p {
     justify-content: space-evenly;
     align-items: center;
     /*flex-wrap: wrap;*/
+    border-bottom: 3px solid black;
 }
 
 #tech-module {
@@ -784,3 +785,59 @@ footer a p {
     border: 2px solid black;
     background-color: #f8e8c5;
 }
+
+#tech-sec4 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+#tech-sec4-title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: clamp(35px, 3vw, 60px);
+}
+
+#tech-sec4-desc {
+    text-align: center;
+    font-weight:200;
+    margin: 0;
+    padding-bottom: 30px;
+    font-style: italic;
+    font-size: clamp(20px, 3vw, 30px);
+    margin: 0 auto;
+    max-width:70vw;
+    height: 100px;
+    transition: opacity 0.5s ease;  
+    opacity: 1;
+}
+
+#tech-sec4-modules {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    padding-bottom: 40px;
+}
+
+#tech-sec4 img {
+    opacity: 1;
+    width:15vw;
+    animation: bounce 4s ease-in-out infinite;
+    transition: all 0.4s ease;
+}
+
+#tech-sec4 img:hover {
+    scale: 1.15;
+}
+
+#tech-scalable, #tech-deploy, #tech-lowrisk {
+    margin-top: 40px;
+}
+
+#tech-capex, #tech-reach {
+    margin-top: -5px;
+}
+
