@@ -1,6 +1,21 @@
 
+// Function to scroll down on learn home from home page
 
-// Function that controls scroll down from arrow on home page
+document.addEventListener("DOMContentLoaded", function() {
+    const homeButton = document.getElementById("home-button");
+
+    function scrollDownOnePage() {
+        window.scrollBy({
+            top: window.innerHeight, // Scroll down by the height of the viewport
+            behavior: "smooth" // Smooth scrolling
+        });
+    }
+
+    homeButton.addEventListener("click", scrollDownOnePage);
+});
+
+// Function that controls scroll down from arrow on home page (old)
+/*
 document.addEventListener("DOMContentLoaded", function() {
     const downScroll = document.getElementById("home-learn-more");
     const targetSection = document.getElementById("home-sec4-wrap");
@@ -18,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     downScroll.addEventListener("click", scrollDown);
 });
+*/
 
 // Function that controls the fade in between pages
 window.addEventListener('load', function() {

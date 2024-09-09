@@ -58,7 +58,6 @@ header {
     top: 0;
     left: 0;
     padding: 18px 9px;
-    background-color: #063623;
     color: white; 
     text-align: center; 
     display: flex;
@@ -67,9 +66,11 @@ header {
     /*transition: all 0.2s ease;*/
     opacity: 1;
     z-index: 6000;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 
-    background-image: url('images/crystalgif.gif');
+    /* These lines control the header transparency */
+    /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);*/
+    /*background-image: url('images/crystalgif.gif');*/
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -135,6 +136,7 @@ header nav a:not(:last-child)::after {
     border-radius: 10px;
     text-decoration: none;
     transition: background-color 0.3s ease; 
+    border: 2px whitesmoke solid;
 }
 
 .contact-link:hover {
@@ -182,76 +184,71 @@ footer a p {
 
 /* STYLING FOR THE HOME PAGE */
 
-#home-front {
-    padding-top:145px;
-    background: linear-gradient(180deg, whitesmoke 90%, rgba(3,3,3,1) 100%);
-    /*background: whitesmoke;*/
-}
-
-#home-front div{
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-}
-
-#home-front hr {
-    width: 35vw;
-    border: none;
-    border-top: 2px solid #000; 
-    margin: 0; 
-}
-
-.line-container {
+#home-page {
+    background-image: url('images/crystal-home5.gif'); 
+    background-repeat: repeat; 
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-}
-
-#tLT{
-    margin-left: 200px;
-    font-size: clamp(12px, 2.8vw, 150px);
-    padding-bottom:5px;
     text-align: center;
-    font-weight: 500;
 }
 
-#tLB {
-    margin-left: 200px;
-    font-size: clamp(10px, 2.8vw, 16px);
-    padding-top: 10px;
-    text-align:left;
-    min-width: 100px;
-}
-
-#tRT {
-    margin-right: 200px;
-    font-size: clamp(12px, 2.8vw, 150px);
-    padding-bottom:5px;
+#home-title {
+    color: whitesmoke;
+    font-size: clamp(40px, 4vw, 60px);
+    font-weight: 200;
+    padding-top: 28vh;
+    /*padding-left: 10vw;*/
+    margin-bottom: 15px;
+    line-height: 1.1;
+    text-shadow: 0 0 18px rgba(255, 255, 255, 1), 1px 1px 3px rgba(255, 255, 255, 0.8); 
+    -webkit-text-stroke: .3px rgb(255, 255, 255);
     text-align: center;
-    font-weight: 500;
 }
 
-#tRB {
-    margin-right: 200px;
-    font-size: clamp(10px, 2.8vw, 16px);
-    padding-top: 10px;
-    text-align:right;
+#home-subtitle {
+    color: whitesmoke;
+    /*padding-left: 10.3vw;*/
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 30vw;
+    font-weight:300;
+    font-size: clamp(15px, 2vw, 20px);
+    text-align: center;
 }
 
-#home-team-image {
-    padding-top:10px;
-    width:clamp(54vw, 4vw, 1000px);
+
+#home-button {
+    display: inline-block;
+    background-color: #413f3f;
+    padding: 12px;
+    border-radius: 25px;
+    color: white;
+    border: 2px whitesmoke solid;
+
 }
 
-#home-image-bottom {
-    margin:0;
-    border-top: 4px solid #000;
-    /*padding-bottom:20px;*/
-    border-bottom: 1px solid #000;
-    margin-bottom:0;
+#home-button-wrap {
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    background-color: none;
+    border-radius: 25px;
 }
 
+#home-button-wrap:hover {
+    background-color:rgb(196, 175, 56);
+}
+
+#home-button:hover {
+    background-color: transparent;
+}
 
 #home-sec2 {
     background-color: rgb(3, 3, 3);
