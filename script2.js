@@ -6,13 +6,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function scrollDownOnePage() {
         window.scrollBy({
-            top: window.innerHeight, // Scroll down by the height of the viewport
-            behavior: "smooth" // Smooth scrolling
+            top: window.innerHeight,
+            behavior: "smooth" 
         });
     }
 
     homeButton.addEventListener("click", scrollDownOnePage);
 });
+
+
+// Function to reinstate header background on scroll
+/*
+document.addEventListener("DOMContentLoaded", function() {
+    const header = document.querySelector('header'); 
+    const scrollTrigger = 100; 
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > scrollTrigger) {
+            header.style.boxShadow = "0 5px 10px rgba(0, 0, 0, 0.6)";
+            header.style.backgroundImage = "url('images/crystalgif.gif')";
+        } else {
+            header.style.boxShadow = "none";
+            header.style.backgroundImage = "none";
+        }
+    });
+});
+*/
 
 // Function that controls scroll down from arrow on home page (old)
 /*
