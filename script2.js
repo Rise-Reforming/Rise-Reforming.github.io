@@ -1,6 +1,5 @@
 
 // Function to scroll down on learn home from home page
-
 document.addEventListener("DOMContentLoaded", function() {
     const homeButton = document.getElementById("home-button");
 

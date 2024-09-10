@@ -227,16 +227,15 @@ footer a p {
 
 #home-button {
     display: inline-block;
-    background-color: #413f3f;
+    background-color: transparent;
     padding: 12px;
     border-radius: 25px;
     color: white;
     border: 2px whitesmoke solid;
-
 }
 
 #home-button-wrap {
-    transition: background-color 0.3s ease;
+    transition: background-color .8s ease;
     display: inline-block;
     background-color: none;
     border-radius: 25px;
@@ -244,10 +243,6 @@ footer a p {
 
 #home-button-wrap:hover {
     background-color:rgb(196, 175, 56);
-}
-
-#home-button:hover {
-    background-color: transparent;
 }
 
 #home-sec2 {
