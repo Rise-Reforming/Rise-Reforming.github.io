@@ -42,6 +42,7 @@ html {
 }
 
 body {
+    touch-action: pan-y;
     margin: 0;
     width: 100%;
     background-color: whitesmoke;
