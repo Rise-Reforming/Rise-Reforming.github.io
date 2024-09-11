@@ -1,4 +1,19 @@
 
+// Code to make header resize at small screens
+window.addEventListener('resize', toggleDisplay);
+window.addEventListener('load', toggleDisplay);
+
+function toggleDisplay() {
+    const elements = document.querySelectorAll('.header-logo');
+    elements.forEach(element => {
+        if (window.innerWidth < 550) { 
+            element.style.display = 'none';
+        } else {
+            element.style.display = 'flex';
+        }
+    });
+}
+
 // Function to scroll down on learn home from home page
 document.addEventListener("DOMContentLoaded", function() {
     const homeButton = document.getElementById("home-button");

@@ -33,6 +33,14 @@
     transform: translateY(0);
 }
 
+section {
+    max-width: 100vw;
+}
+
+html {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     width: 100%;
@@ -62,6 +70,7 @@ header {
     text-align: center; 
     display: flex;
     justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /*transition: all 0.2s ease;*/
     opacity: 1;
@@ -78,6 +87,7 @@ header {
 }
 
 .header-logo {
+    padding-left: 30px;
     display: flex;
     align-items: center;
 }
@@ -94,6 +104,7 @@ header {
 header nav {
     padding-right: 60px; 
     display: flex;
+    /*padding-left: 70px;*/
 }
 
 header nav a {
@@ -478,6 +489,11 @@ footer a p {
 }
 
 /* STYLING FOR THE TEAM PAGE */
+
+#team-head {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    background-image: url('images/crystalgif.gif');
+}
 
 #team-title {
     padding-top: 80px;
