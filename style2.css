@@ -160,10 +160,10 @@ header nav a:not(:last-child)::after {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center; 
-    justify-content: center; 
     background-color: #063623;
-    height: 150px;
+    height: fit-content;
     justify-content: space-between;
     background-image: url('images/crystalgif.gif');
     background-repeat: no-repeat;
@@ -171,6 +171,7 @@ footer {
     background-size: cover;
     width:100vw;
     border-top: 5px black solid;
+    justify-content: center;
 }
 
 footer a {
@@ -179,6 +180,7 @@ footer a {
 }
 
 footer a p {
+    padding-left:30px;
     line-height: 1.65;
     color: wheat;
 }
