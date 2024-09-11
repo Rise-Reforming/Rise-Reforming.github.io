@@ -5,7 +5,15 @@ window.addEventListener('load', toggleDisplay);
 
 function toggleDisplay() {
     const elements = document.querySelectorAll('.header-logo');
+    const elements2 = document.querySelectorAll('.footer-logo');
     elements.forEach(element => {
+        if (window.innerWidth < 550) { 
+            element.style.display = 'none';
+        } else {
+            element.style.display = 'flex';
+        }
+    });
+    elements2.forEach(element => {
         if (window.innerWidth < 550) { 
             element.style.display = 'none';
         } else {
