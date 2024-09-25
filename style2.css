@@ -247,6 +247,7 @@ footer a p {
     border-radius: 25px;
     color: white;
     border: 2px whitesmoke solid;
+    cursor: pointer;
 }
 
 #home-button-wrap {

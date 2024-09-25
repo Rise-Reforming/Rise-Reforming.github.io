@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function scrollDown() {
         const headerHeight = header.offsetHeight; 
-        const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - headerHeight + 15;
+        const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - headerHeight + 100;
 
         window.scrollTo({
             top: targetPosition,
