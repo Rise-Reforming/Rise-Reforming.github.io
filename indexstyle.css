@@ -1,11 +1,12 @@
 /* STYLING FOR THE HOME PAGE */
 
 #home-page {
-    background-image: url('images/crystal-home6.gif'); 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgb(3, 3, 3) 100%), 
+                url('images/crystal-home6.gif'); 
     background-repeat: repeat; 
     background-size: cover; 
     background-position: center; 
-    min-height: 100vh;
+    min-height: 110vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -40,7 +41,6 @@
     text-align: center;
 }
 
-
 #home-button {
     display: inline-block;
     background-color: transparent;
@@ -62,21 +62,66 @@
     background-color: #C1913D;;
 }
 
-#home-sec2 {
-    background-color: rgb(3, 3, 3);
-    align-items: center; 
-    justify-content: center; 
+
+#home-sec1 {
+    background-color: rgb(3, 3, 3); /* Matches the gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 50px;
+    color: whitesmoke;
+    margin-top: -2px;
+    padding-top: 50px;
+    padding-left:50px;
+    padding-right:50px;
+
 }
 
-#home-sec2 div {
-    align-items: center; 
-    justify-content: center; 
-    display: flex; 
-    /*flex-direction: column;*/
-    gap: clamp(30px, 2vw, 60px);
+#home-sec1 h2 {
+
+    color: whitesmoke;
+    font-size: clamp(40px, 4vw, 60px);
+    font-weight: 200;
+    padding-top: 5vh;
+    /*padding-left: 10vw;*/
+    margin-bottom: 15px;
+    line-height: 1.1;
+    text-shadow: 0 0 18px rgba(255, 255, 255, 1), 1px 1px 3px rgba(255, 255, 255, 0.8); 
+    -webkit-text-stroke: .3px rgb(255, 255, 255);
+    text-align: center;
+
+    color: whitesmoke;
+    color: rgb(217, 210, 210);
+    text-align: center;
+    font-size: clamp(40px, 5vw, 150px);
+    margin:0px;
+    padding-bottom: 10px;
+    font-weight: 200;
 }
+
+#home-sec1 h4 {
+    color: whitesmoke;
+    color: rgb(181, 179, 179);
+    text-align: center;
+    font-size: clamp(20px, 2.5vw, 50px);
+    margin:0px;
+}
+
+#home-sec1-txt {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black for contrast */
+    color: whitesmoke; /* Text color for contrast */
+    border: 2px solid #BB923B; /* Gold border for accent */
+    border-radius: 15px; /* Rounded edges */
+    padding: 20px; /* Spacing inside the box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    max-width: 80%; /* Ensures the text box doesn't stretch too wide */
+    margin: 20px auto; /* Centers the box */
+    font-size: clamp(14px, 2vw, 18px); /* Responsive font size */
+    text-align: center; /* Centers the text inside the box */
+    font-family: 'Roboto', sans-serif; /* Matches the site’s font */
+    line-height: 1.6; /* Improves readability */
+}
+
 
 #RISE {
     height: clamp(50px, 2vw, 150px);
@@ -90,18 +135,6 @@
     max-width:40vw;
 }
 
-#home-sec2-hr {
-    margin-top:30px;
-    width:60vw;
-    border-top: 3px solid lightgoldenrodyellow;
-    border-radius: 40%;
-}
-
-#home-page {
-    display:flex;
-    flex-direction: column;
-    min-height:100vh;
-}
 
 #home-learn-more { 
     min-height: 40vh;
@@ -128,71 +161,11 @@
     font-size: 22px;
 }
 
-#home-arrow {
-    height:80px;
-    transition: all 0.2s ease;
-}
-
-#home-arrow:hover {
-    height:88px;
-}
-
-#home-sec4-wrap {
-    background: linear-gradient(180deg, #B69238 0%, rgba(3,3,3,1) 10%);
-    background: black;
-    display:flex;
-    flex-direction: column;
-    padding-top:30px;
-}
-
-#home-sec4-wrap h2 {
-    color: whitesmoke;
-    color: rgb(217, 210, 210);
-    text-align: center;
-    font-size: clamp(40px, 5vw, 150px);
-    margin:0px;
-    padding-bottom: 10px;
-    font-weight: 200;
-}
-
-#home-sec4-wrap h4 {
-    color: whitesmoke;
-    color: rgb(181, 179, 179);
-    text-align: center;
-    font-size: clamp(20px, 2.5vw, 50px);
-    margin:0px;
-}
-
-#home-sec4 {
-    height:fit-content;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #030303;
-    padding-bottom: 20px;
-    align-content: center;
-}
-
-#home-sec4-im {
-    margin-top: clamp(20px, 3vw, 50px);
-}
-
-#home-5perc {
-    max-width: clamp(50vw, 7vw, 60vw);
-}
-
-#home-sec4-txt {
-    margin-top: clamp(25px, 3vw, 50px);
-    width: 230px;
-    justify-content: center;
-    font-size: clamp(11px, 1.8vw, 22px);
-    color:rgb(181, 179, 179);
-}
 
 #home-one-sol {
     padding: 30px;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     padding-bottom:0px;
 }
@@ -208,18 +181,41 @@
     flex-direction:column;
     align-items: center;   
     margin-left: 20px;
+
 }
 
 #home-sol-txt h2 {
+    color: whitesmoke;
+    font-size: clamp(40px, 4vw, 60px);
+    font-weight: 200;
+    padding-top: 5vh;
+    /*padding-left: 10vw;*/
+    margin-bottom: 15px;
+    line-height: 1.1;
+    text-shadow: 0 0 18px rgba(255, 255, 255, 1), 1px 1px 3px rgba(255, 255, 255, 0.8); 
+    -webkit-text-stroke: .3px rgb(255, 255, 255);
+    text-align: center;
+
     border-left: 3px black solid;
     padding-left: 30px;
     font-size: clamp(40px, 3vw, 100px);
 }
 
 #home-sol-txt p {
-    color:#030303;
     font-size: clamp(12px, 2.8vw, 30px);
     max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black for contrast */
+    color: whitesmoke; /* Text color for contrast */
+    border: 2px solid #BB923B; /* Gold border for accent */
+    border-radius: 15px; /* Rounded edges */
+    padding: 20px; /* Spacing inside the box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    max-width: 80%; /* Ensures the text box doesn't stretch too wide */
+    margin: 20px auto; /* Centers the box */
+    font-size: clamp(14px, 2vw, 18px); /* Responsive font size */
+    text-align: center; /* Centers the text inside the box */
+    font-family: 'Roboto', sans-serif; /* Matches the site’s font */
+    line-height: 1.6; /* Improves readability */
 }
 
 #home-arrow2-div {
