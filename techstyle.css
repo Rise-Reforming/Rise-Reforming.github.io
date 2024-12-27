@@ -1,0 +1,177 @@
+/* STYLING FOR TECH PAGE STARTS HERE */
+
+#tech-head {
+    background:none; 
+    box-shadow: none;
+    position:absolute;
+}
+
+#tech-title {
+    /*margin-top:100px;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content:space-evenly;
+    align-items:center;
+    /*transition: all 0.4s ease;*/
+
+    position:fixed;
+    width: 100%;
+    height: 500px;
+    background-image: url('images/water-bag.png'); 
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+#tech-title-wrap {
+    height: 500px;
+}
+
+#tech-title-txt {
+    font-size: clamp(35px, 3.2vw, 65px);
+    font-weight: 300;
+    text-align: left;
+    max-width: 50vw;
+    margin-top:110px;
+}
+
+
+#tech-im1 {
+    margin-top: 80px;
+    height: 260px;
+    width: 150px; 
+    opacity: .8;
+    transition: opacity 1.5s ease-in-out;
+    background-image: url('images/bag_processed.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: bounce 4s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px); 
+    }
+}
+
+#tech-sec2 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tech-sec2-txt {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    max-width:90vw;
+    margin-bottom:0;
+}
+
+#tech-sec2 img {
+    width: 60vw;
+}
+
+#tech-sec2-sub {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 1); 
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100; 
+    opacity: 1;
+    max-width: 80vw;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#tech-sec3 {
+    padding-top:40px;
+    padding-bottom: 40px;
+    /*background-image: url(images/water-bag.png);
+    background-color: whitesmoke;*/
+    background: linear-gradient(0deg, grey 30%, white 100%);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+    border-bottom: 3px solid black;
+}
+
+#tech-module {
+    height: 70vh;
+}
+
+#tech-sec3-txt {
+    font-size: clamp(30px, 6vw, 80px);
+    font-weight: 300;
+    max-width: 50vw;
+    margin-top:0;
+    margin-left:30px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: #f8e8c5;
+}
+
+#tech-sec4 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+#tech-sec4-title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: clamp(35px, 3vw, 60px);
+}
+
+#tech-sec4-desc {
+    text-align: center;
+    font-weight:200;
+    margin: 0;
+    padding-bottom: 30px;
+    font-style: italic;
+    font-size: clamp(20px, 3vw, 30px);
+    margin: 0 auto;
+    max-width:70vw;
+    height: 100px;
+    transition: opacity 0.5s ease;  
+    opacity: 1;
+}
+
+#tech-sec4-modules {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    padding-bottom: 40px;
+}
+
+#tech-sec4 img {
+    opacity: 1;
+    width:15vw;
+    animation: bounce 4s ease-in-out infinite;
+    transition: all 0.4s ease;
+}
+
+#tech-sec4 img:hover {
+    scale: 1.15;
+}
+
+#tech-scalable, #tech-deploy, #tech-lowrisk {
+    margin-top: 40px;
+}
+
+#tech-capex, #tech-reach {
+    margin-top: -5px;
+}
+
