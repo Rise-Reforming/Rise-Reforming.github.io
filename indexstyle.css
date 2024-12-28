@@ -163,6 +163,7 @@
 }
 
 
+
 #home-one-sol {
     padding: 30px;
     display:flex;
@@ -269,7 +270,7 @@
     font-style: italic;
     z-index: 1;
     font-size: clamp(10px, 2.6vw, 25px);
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 #home-tech-links-wrap {
@@ -288,7 +289,7 @@
     z-index: 1; 
     display: flex;
     justify-content: center;
-    margin-bottom:-30px;
+    margin-bottom:-15px;
     
 }
 
