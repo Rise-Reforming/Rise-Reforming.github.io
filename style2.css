@@ -163,10 +163,12 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center; 
-    background-color: #063623;
+    /*background-color: #063623;*/
     height: fit-content;
     justify-content: space-between;
-    background-image: url('images/crystalgif.gif');
+    background: linear-gradient(to bottom, rgba(3, 3, 3, 1) 0%, rgba(3, 3, 3, 0.8) 30%, rgba(3, 3, 3, 0.5) 60%, rgba(3, 3, 3, 0) 100%), 
+                url('images/crystalgif.gif'); 
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

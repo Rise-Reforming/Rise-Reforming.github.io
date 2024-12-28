@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function scrollDownOnePage() {
         window.scrollBy({
-            top: window.innerHeight,
+            top: window.innerHeight + 80,
             behavior: "smooth" 
         });
     }
