@@ -6,6 +6,9 @@ body {background-color: black;}
     background:none; 
     box-shadow: none;
     position:absolute;
+    text-shadow: 
+        0 0 10px rgba(0, 0, 0, 0.8),  
+        2px 2px 4px rgba(0, 0, 0, 0.6); 
 }
 
 #impact-title {
@@ -39,13 +42,13 @@ body {background-color: black;}
     transition: all 0.4s ease;
     font-family: 'Archivo', sans-serif;
 
-    font-family: 'Archivo', sans-serif; /* Modern, clean font */
-    font-weight: 700; /* Bold weight for emphasis */
-    color: whitesmoke; /* High contrast against blue background */
+    font-family: 'Archivo', sans-serif; 
+    font-weight: 700; 
+    color: whitesmoke; 
     text-shadow: 
-        0 0 10px rgba(0, 0, 0, 0.8),  /* Soft glow for visibility */
-        2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle drop shadow for depth */
-    text-align: center; /* Centers the text */
+        0 0 10px rgba(0, 0, 0, 0.8),  
+        2px 2px 4px rgba(0, 0, 0, 0.6); 
+    text-align: center;
     display: inline-block;
     opacity: 1;
     
