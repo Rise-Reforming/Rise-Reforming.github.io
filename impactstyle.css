@@ -1,5 +1,7 @@
 /* STYLING FOR IMPACT PAGE */ 
 
+body {background-color: black;}
+
 #impact-head {
     background:none; 
     box-shadow: none;
@@ -7,10 +9,11 @@
 }
 
 #impact-title {
-    position:fixed;
+    position:relative;
     width: 100%;
     height: 500px;
-    background-image: url('images/clouds.png'); 
+    background-image: url('images/rotation.gif'); 
+    opacity: 80%;
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -28,13 +31,24 @@
 }
 
 #impact-title-main {
-    padding-top:165px;
+    padding-top: clamp(80px, 2vw, 300px); 
     text-align: center;
-    color:#000000;
-    font-size: 90px;
-    font-weight: 600; 
+    color: black;
+    font-size: clamp(90px, 4vw, 150px);
     margin-bottom:0;
     transition: all 0.4s ease;
+    font-family: 'Archivo', sans-serif;
+
+    font-family: 'Archivo', sans-serif; /* Modern, clean font */
+    font-weight: 700; /* Bold weight for emphasis */
+    color: whitesmoke; /* High contrast against blue background */
+    text-shadow: 
+        0 0 10px rgba(0, 0, 0, 0.8),  /* Soft glow for visibility */
+        2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle drop shadow for depth */
+    text-align: center; /* Centers the text */
+    display: inline-block;
+    opacity: 1;
+    
 }
 
 #impact-title-sub {
@@ -50,7 +64,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: none;
+    margin-top: -30px;
 }
 
 #impact-sec2 p {
@@ -62,19 +77,24 @@
     padding-top: 30px;
     max-width: 80vw;
     padding-bottom: 15px;
+    color: whitesmoke;
 }
 
 #impact-sec2 img {
     width: 70vw;
+    border-radius: 15px;
+    border: 2px solid #BB923B; 
 }
 
 #impact-sec3 {
-    background-color: white;
+    background-color: black;
     display: flex;
     justify-content: center;
 }
 
 #impact-im2 {
     width: 70vw;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    border: 2px solid #BB923B;
 }

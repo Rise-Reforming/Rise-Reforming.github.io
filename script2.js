@@ -176,11 +176,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Function for parallax scroll of impact background
-document.addEventListener("scroll", function() {
+/*document.addEventListener("scroll", function() {
     const scrollPosition = window.scrollY;
     const backgroundElement = document.getElementById("impact-title");
     backgroundElement.style.transform = `translateY(${-scrollPosition * 0.2}px)`;
-});
+});*/
 
 
 // Function to make Tech top section disappear smoothly and switch images in it
