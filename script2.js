@@ -225,11 +225,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Function for parallax scroll of tech title background
+/*
 document.addEventListener("scroll", function() {
     const scrollPosition = window.scrollY;
     const backgroundElement = document.getElementById("tech-title");
     backgroundElement.style.transform = `translateY(${-scrollPosition * 0.2}px)`;
-});
+});*/
 
 
 document.addEventListener("DOMContentLoaded", function() {

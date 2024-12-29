@@ -51,6 +51,7 @@ body {
 
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    min-width:100vw;
 }
 
 body.fade-out {
@@ -84,7 +85,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width:100vw;
+    max-width:100vw;
 }
 
 .header-logo {
