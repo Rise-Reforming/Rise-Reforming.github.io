@@ -107,7 +107,16 @@
     margin:0px;
 }
 
-#home-sec1-txt p {
+
+#home-sec1-triple {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home-sec1-triple p {
     margin-top:150px;
     background-color: rgba(0, 0, 0, 0.7); 
     color: whitesmoke; 
@@ -115,7 +124,7 @@
     border-radius: 15px; 
     padding: 20px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
-    max-width: 80%; 
+    max-width: 40%; 
     margin: 20px auto; 
     font-size: clamp(14px, 2vw, 18px); 
     text-align: center; 
