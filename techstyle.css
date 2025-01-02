@@ -143,12 +143,17 @@
     align-content: center;
     background-color: rgba(173, 216, 230, 1);
     margin-top: -5px;
+    align-items: center;
+    background: linear-gradient(to top, rgb(0, 0, 0, 1) 0%, rgba(173, 216, 230, 1) 20%);
 }
 
 #tech-sec4-title {
+    font-size: 40px;
+    font-weight: 300;
     padding-top: 20px;
     text-align: center;
-    font-size: clamp(35px, 3vw, 60px);
+    max-width:90vw;
+    align-content: center;
 }
 
 #tech-sec4-desc {
@@ -178,7 +183,7 @@
     justify-content: space-evenly;
     padding-bottom: 60px;
     background-color: rgba(173, 216, 230, 1);
-    background: linear-gradient(to top, rgb(0, 0, 0, 1) 0%, rgba(173, 216, 230, 1) 50%);
+    background: none;
 }
 
 #tech-sec4 img {
