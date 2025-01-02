@@ -17,11 +17,11 @@
 
     /*position:absolute;*/
     width: 100%;
-    height: 500px;
+    height: 700px;
     /*background-image: url('images/water-bag.png'); */
     background: 
-        linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 100%), /* Fade to black at the top */
-        linear-gradient(to top, rgba(173, 216, 230, 1) 0%, rgba(173, 216, 230, 0) 100%), /* Fade to light blue at the bottom */
+        linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 30%), /* Fade to black at the top */
+        linear-gradient(to top, rgba(173, 216, 230, 1) 0%, rgba(173, 216, 230, 0) 40%), /* Fade to light blue at the bottom */
         url('images/trashfloat2.gif'); /* GIF layer */
     background-color: pink; /* Base color */
     background-size: cover;
@@ -30,7 +30,7 @@
 }
 
 #tech-title-wrap {
-    height: 500px;
+    height: 700px;
     padding: 0px;
 }
 
