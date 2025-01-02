@@ -31,26 +31,42 @@ body {background-color: black;}
     flex-direction: column;
     justify-content: center;
     position:relative;
+    align-items: center;
+    align-content: center;
 }
 
 #impact-title-main {
-    padding-top: clamp(80px, 2vw, 300px); 
+    align-items: center;
+    align-content: center;
+    /*padding-top: clamp(80px, 2vw, 300px); */
+    max-width:80vw;
+    padding-top: 440px;
     text-align: center;
     color: black;
     font-size: clamp(90px, 4vw, 150px);
     margin-bottom:0;
     transition: all 0.4s ease;
+    
+    /*
     font-family: 'Archivo', sans-serif;
-
     font-family: 'Archivo', sans-serif; 
     font-weight: 700; 
     color: whitesmoke; 
     text-shadow: 
         0 0 10px rgba(0, 0, 0, 0.8),  
-        2px 2px 4px rgba(0, 0, 0, 0.6); 
+        2px 2px 4px rgba(0, 0, 0, 0.6); */
+    
+    font-size: clamp(35px, 3.2vw, 65px);
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    line-height: 1.1;
+    text-shadow: 0 0 18px rgb(255, 255, 255), 1px 1px 3px rgba(255, 255, 255, 0.8); 
+    -webkit-text-stroke: .3px rgb(255, 255, 255);
+
     text-align: center;
     display: inline-block;
     opacity: 1;
+
     
 }
 
@@ -68,7 +84,7 @@ body {background-color: black;}
     justify-content: center;
     align-items: center;
     background-color: none;
-    margin-top: -30px;
+    margin-top: 50px;
 }
 
 #impact-sec2 p {
