@@ -53,6 +53,7 @@ body {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     min-width:100vw;
+    background-color: black;
 }
 
 body.fade-out {
