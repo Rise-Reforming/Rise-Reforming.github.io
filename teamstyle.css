@@ -108,3 +108,10 @@
 #team-advisors img:hover {
     scale: 1.05;
 }
+
+#emails {
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+}
