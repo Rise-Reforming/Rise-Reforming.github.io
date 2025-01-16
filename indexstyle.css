@@ -95,7 +95,7 @@
     text-align: center;
     font-size: clamp(40px, 5vw, 130px);
     margin:0px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     font-weight: 200;
 }
 
@@ -108,15 +108,20 @@
 }
 
 
-#home-sec1-triple {
+#home-sec1-double {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
 }
 
-#home-sec1-triple p {
+#home-sec1-double div {
+    margin-bottom: 30px;
+}
+
+#home-sec1-double div p {
     margin-top:150px;
     background-color: rgba(0, 0, 0, 0.7); 
     color: whitesmoke; 
@@ -124,7 +129,7 @@
     border-radius: 15px; 
     padding: 20px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
-    max-width: 40%; 
+    width: 45%; 
     margin: 20px auto; 
     font-size: clamp(14px, 2vw, 18px); 
     text-align: center; 
@@ -170,8 +175,6 @@
 #home-learn-more-txt:hover {
     font-size: 22px;
 }
-
-
 
 #home-one-sol {
     padding: 30px;
