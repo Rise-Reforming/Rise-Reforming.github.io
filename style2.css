@@ -168,7 +168,6 @@ footer {
     align-items: center; 
     /*background-color: #063623;*/
     height: fit-content;
-    justify-content: space-between;
     background: linear-gradient(to bottom, rgba(3, 3, 3, 1) 0%, rgba(3, 3, 3, 0.8) 30%, rgba(3, 3, 3, 0.5) 60%, rgba(3, 3, 3, 0) 100%), 
                 url('images/crystalgif.gif'); 
     
@@ -177,27 +176,28 @@ footer {
     background-size: cover;
     width:100vw;
     border-top: 5px black solid;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-footer a {
-    margin-right: 100px;
-    text-decoration: none;
-}
-
-footer a p {
-    padding-left:30px;
+#footer-left{
+    padding-left:50px;
     line-height: 1.65;
     color: wheat;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 100;
 }
 
-.footer-logo {
-    display: flex;
-    align-items: center;
+#footer-right a{
+    padding-right:50px;
+    line-height: 1.65;
+    color: wheat;
+    text-align: right;
+    text-decoration: none;
+    font-weight: 100;
 }
 
-.footer-logo img {
-    height: 80px;
-    transition: all 0.5s ease;
-    margin-left:15px;
+#footer-right {
+    text-align: right;
 }
+
