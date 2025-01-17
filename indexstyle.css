@@ -186,9 +186,7 @@
 }
 
 #home-arrows-img {
-    width: clamp(30vw, 40vw, 30vw);
-    max-width: 30vw;
-    min-width:30vw;
+    width: 60vw;
     background-color:rgb(228, 222, 222);
     border-radius: 25px;
     border: 2px solid #BB923B;
@@ -216,7 +214,7 @@
 
     /*border-left: 3px black solid;
     padding-left: 30px;*/
-    font-size: clamp(40px, 3vw, 100px);
+    font-size: clamp(40px, 5vw, 130px);
     align-items: center; 
     justify-content: center;
     margin:0px;
