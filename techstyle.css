@@ -22,7 +22,7 @@
     background: 
         linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 30%), /* Fade to black at the top */
         linear-gradient(to top, rgba(173, 216, 230, 1) 0%, rgba(173, 216, 230, 0) 40%), /* Fade to light blue at the bottom */
-        url('images/trashfloat2.gif'); /* GIF layer */
+        url('images/trashfloat-new.gif'); /* GIF layer */
     background-color: pink; /* Base color */
     background-size: cover;
     background-position: center;
@@ -35,15 +35,20 @@
 }
 
 #tech-title-txt {
-    font-size: clamp(35px, 3.2vw, 65px);
     font-weight: 200;
     text-align: left;
     max-width: 50vw;
-    margin-top:110px;
+    margin-top:62vh;
     color: whitesmoke;
     line-height: 1.1;
     text-shadow: 0 0 18px rgba(255, 255, 255, 1), 1px 1px 3px rgba(255, 255, 255, 0.8); 
     -webkit-text-stroke: .3px rgb(255, 255, 255);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    display: inline-block;
+    opacity: 1;
+    font-size: clamp(42px, 3.2vw, 65px);
 }
 
 
@@ -78,17 +83,33 @@
 }
 
 #tech-sec2-txt {
-    font-size: 40px;
+
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
     font-weight: 300;
+    font-size: 20px;
+    padding-top: 30px;
+    max-width: 80vw;
+    padding-bottom: 15px;
+    color: black;
+    border: 3px solid #C1913D;
+    border-radius: 12px; 
+    padding: 10px 20px;
     text-align: center;
     max-width:90vw;
     margin-bottom:0;
+    /*background-color: #f8e8c5;*/
+    background-color: whitesmoke;
+
+
 }
 
 #tech-sec2 img {
     width: 60vw;
     border-radius: 25px;
     margin-top: 20px;
+    border: 3px solid #C1913D;
 }
 
 #tech-sec2-sub {
