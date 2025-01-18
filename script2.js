@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     const descriptions = {
         "tech-scalable": "<strong>Scalable:</strong> Scaling up production is as easy as stacking two of our shipping containers together.",
-        "tech-capex": "<strong>Lower CAPEX:</strong> Compared to large chemical plants that often cost hundreds of millions to set up, Rise Refroming's modules are extremely low cost.",
+        "tech-capex": "<strong>Lower CAPEX:</strong> Compared to large chemical plants that often cost hundreds of millions to set up, Rise Reforming's modules are extremely low cost.",
         "tech-deploy": "<strong>Rapid Deployment:</strong> Our modules can be easily shipped on the back of an 18 wheeler, and can be deployed in as little time as just a few days.",
         "tech-reach": "<strong>Greater Reach:</strong> Our modules can be placed directly on the site of plastic waste producers, eliminating the need to transport feedstock.",
         "tech-lowrisk": "<strong>Low Risk:</strong> If one module fails, problems are contained to that single module, and others can continue production."
