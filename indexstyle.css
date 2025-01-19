@@ -380,7 +380,7 @@
 
 .card {
     width: 30vw;
-    height: 300px;
+    height: 35vh;
     position: relative;
     transform-style: preserve-3d;
     transform: rotateY(0);
@@ -399,18 +399,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    border: 1px solid #ddd;
+    align-items: flex-start;
+    padding-top: 30px;
+    font-size: 35px;
+    font-weight: 200;
+    color: #000000;
+    border: 2px solid #C1913D;
     border-radius: 30px;
+
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
   }
 
 .card-front {
-    background-color: #4CAF50;
+    background-color: whitesmoke;
   }
 
 .card-back {
-    background-color: #2196F3;
+    background-color: #ffffff;
     transform: rotateY(180deg);
   }
