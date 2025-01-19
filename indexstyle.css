@@ -419,4 +419,16 @@
 .card-back {
     background-color: #ffffff;
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:30px;
+    
   }
+
+.card-back img {
+    width: 130px;
+    width: clamp(130px, 10vw, 300px);
+}
