@@ -164,7 +164,7 @@ header nav a:not(:last-child)::after {
 
 footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center; 
     /*background-color: #063623;*/
     height: fit-content;

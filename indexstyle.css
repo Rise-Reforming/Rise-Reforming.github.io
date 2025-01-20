@@ -391,6 +391,10 @@
     transform: rotateY(180deg);
   }
 
+.card.flipped {
+    transform: rotateY(180deg); /* Flips on click (controlled via JavaScript) */
+  }
+
 .card-side {
     position: absolute;
     width: 100%;
