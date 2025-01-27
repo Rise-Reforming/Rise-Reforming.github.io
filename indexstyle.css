@@ -389,6 +389,7 @@
 
 .card:hover {
     transform: rotateY(180deg);
+    transition-delay: 200ms;
   }
 
 .card.flipped {
