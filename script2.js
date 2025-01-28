@@ -310,3 +310,4 @@ document.querySelectorAll('.card').forEach(card => {
       card.classList.toggle('flipped'); // Toggle the "flipped" class on click
     });
   });
+
